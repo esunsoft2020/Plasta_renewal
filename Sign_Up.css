@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+#top_menu{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+#top_menu a{
+    display: inline;
+    margin-right: 20px;
+}
+
+#contents{
+    margin: auto;
+    width: 620px;
+    height: 735px;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+#fregister_term{
+    display: block;
+    border: 1 solid #e6e6e6;
+    width: 620px;
+    height: 193px;
+}
+
+#fregister_term h2{
+    text-align: left;
+    width: 618px;
+    height: 41px;
+}
+#fregister_term textarea{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+.fregister_agree{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+    line-height: 40px;
+    font-size: 0.92em;
+}
+
+#checkall{
+    text-align: right;
+}
+
+

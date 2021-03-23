@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>회원가입약관|Pla_sta</title>
+    <link rel="stylesheet" href="./Sign_Up.css" media="(min-width:600px)">
 </head>
 <body>
-    <h3>title</h3>
+    <div id="page">
+        <header>
+            <div id="logo" style="position: absolute;">
+                <img src="./image/logo.png" alt="LOGO">
+            </div>
+            <div id="top_menu">
+                <a href=""><img src="./image/ico_user.png" alt=""></a>
+                <a href=""><img src="./image/ico_cart.png" alt=""></a>
+                <a href=""><img src="./image/allmenu.png" alt=""></a>
+            </div>
+        </header>
+        <div></div>
+        <div id="visual"> <img src="./image/sign_image.png"></div>
+    </div>
+
+
+    <div id="contents">
+        <form name="fregister" id="fregister" autocomplete="off" onsubmit="return fregister_submit(this); " autocomplete="off">
+            <div id="chkall">
+                <input type="checkbox" id="checkall">
+                <label for="checkall" cursor: default;>전체동의</label>
+            </div>
+            <div>
+                <section id="fregister_term" >
+                    <h2>회원가입약관</h2>
+                    <input type="checkbox" name="cb1" id="cb1" value="1">
+                    <label for="cb1" style="display: inline-block;">회원가입약관의 내용에 동의합니다.</label>
+                    <Textarea readonly>해당 홈페이지에 맞는 회원가입약관을 입력합니다.</Textarea>          
+               </section>
+            </div>
+            <section>
+                <h2>개인정보처리방침안내</h2>
+                <table border="1">
+                    <tr>
+                        <th>목적</th>
+                    </tr>
+                    <tr>
+                        <td>항목</td>
+                        <td>보유기간</td>
+                    </tr>
+                    <tr>
+                        <td>이용자 식별 및 본인 여부 확인</td>
+                    </tr>
+                    <tr>
+                        <td>아이디, 이름, 비밀번호</td>
+                        <td>회원 탈퇴 시까지</td>
+                    </tr>
+                    <tr>
+                        <td>고객서비스이용에 관한 동지,<br>CS대응을 위한 이용자 식별</td>
+                    </tr>
+                    <tr>
+                        <td>연락처(이메일, 휴대전화번호)</td>
+                        <td>회원 탈퇴 시까지</td>
+                    </tr>
+                    
+                </table>
+            </section>
+            
+            
+        </form>
+    </div>
+    
 </body>
 </html>
