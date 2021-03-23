@@ -1,0 +1,36 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    height: 75px;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(92, 92, 92, 0.5);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1, p {
+    margin: 0;
+  }
+  
+  main {
+    padding: 1rem;
+    height: 100%;  
+  }
+  
+  body {
+    background: #EEE;
+  }
+  
+  body, html {
+    height: 200%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
