@@ -9,12 +9,12 @@ function show(){
 
     switch(num){
         case 1:
-            img1 = "./image/top/top1_1.png";
-            img2 = "./image/top/top1_2.png";
+            img1 = "./image/eun/top/top1_1.png";
+            img2 = "./image/eun/top/top1_2.png";
             break;
         case 2:
-            img1 = "./image/top/top2_1.png";
-            img2 = "./image/top/top2_2.png";
+            img1 = "./image/eun/top/top2_1.png";
+            img2 = "./image/eun/top/top2_2.png";
             break;
     }
     num++;
