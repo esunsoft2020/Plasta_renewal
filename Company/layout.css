@@ -149,3 +149,28 @@ html {
     vertical-align:middle;
     padding-left: 10px;
 }
+
+
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 12px;
+    position: relative;
+}
+
+footer div div.left{width: 80%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
