@@ -11,64 +11,113 @@
     <div id="page">
         <header>
             <div id="logo" style="position: absolute;">
-                <img src="./image/logo.png" alt="LOGO">
+                <a href="http://plasta.co.kr"></a>
+                <img src="./image_young/logo.png" alt="LOGO">
             </div>
             <div id="top_menu">
-                <a href=""><img src="./image/ico_user.png" alt=""></a>
-                <a href=""><img src="./image/ico_cart.png" alt=""></a>
-                <a href=""><img src="./image/allmenu.png" alt=""></a>
+                <a href="./Sign_in.html"><img src="./image_young/ico_user.png" alt=""></a>
+                <a href=""><img src="./image_young/ico_cart.png" alt=""></a>
+                <a href=""><img src="./image_young/allmenu.png" alt=""></a>
             </div>
         </header>
-        <div></div>
-        <div id="visual"> <img src="./image/sign_image.png"></div>
     </div>
-
-
+    <div id="visual"> <img src="./image_young/sign_image.png"></div>
     <div id="contents">
         <form name="fregister" id="fregister" autocomplete="off" onsubmit="return fregister_submit(this); " autocomplete="off">
             <div id="chkall">
-                <input type="checkbox" id="checkall">
-                <label for="checkall" cursor: default;>전체동의</label>
+                <input type="checkbox" name="chkall" id="chkall_box">
+                <label for="chkall_box">전체동의 </label> 
             </div>
             <div>
                 <section id="fregister_term" >
                     <h2>회원가입약관</h2>
-                    <input type="checkbox" name="cb1" id="cb1" value="1">
-                    <label for="cb1" style="display: inline-block;">회원가입약관의 내용에 동의합니다.</label>
-                    <Textarea readonly>해당 홈페이지에 맞는 회원가입약관을 입력합니다.</Textarea>          
+                    <div id="cb1" >
+                        <input type="checkbox" name="cb1" value="1">
+                        <label for="cb1">회원가입약관의 내용에 동의합니다.</label>
+                    </div>          
+                    <Textarea readonly>해당 홈페이지에 맞는 회원가입약관을 입력합니다.</Textarea>
                </section>
+              
             </div>
             <section>
                 <h2>개인정보처리방침안내</h2>
                 <table border="1">
                     <tr>
-                        <th>목적</th>
+                        <th colspan="2">목적</th>
                     </tr>
                     <tr>
                         <td>항목</td>
                         <td>보유기간</td>
                     </tr>
                     <tr>
-                        <td>이용자 식별 및 본인 여부 확인</td>
+                        <td colspan="2">이용자 식별 및 본인 여부 확인</td>
                     </tr>
                     <tr>
-                        <td>아이디, 이름, 비밀번호</td>
+                        <td >아이디, 이름, 비밀번호</td>
                         <td>회원 탈퇴 시까지</td>
                     </tr>
                     <tr>
-                        <td>고객서비스이용에 관한 동지,<br>CS대응을 위한 이용자 식별</td>
+                        <td colspan="2">고객서비스이용에 관한 동지,<br>CS대응을 위한 이용자 식별</td>
                     </tr>
                     <tr>
                         <td>연락처(이메일, 휴대전화번호)</td>
                         <td>회원 탈퇴 시까지</td>
                     </tr>
                     
+                    
                 </table>
             </section>
-            
-            
         </form>
+        <!-- wewe홈페이지 이동 -->
+        <div id="wewe">
+            <a href="http://wewe2020.co.kr" target="_blank">
+                <img src="./image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+            </a>
+        </div>
+        <!-- 스크롤 최상위로 -->
+        <div>
+            <a href="#">
+                <input type="image" src="./image_young/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+            </a>
+        </div>
+       
+        <script>
+            function button_top_drop(){
+                
+            }
+        </script>
     </div>
+    <footer style="background-color: black;">
+        <img src="./image_young/bottom/footer_logo.png" alt="logo">
+        <!-- left -->
+        <div>
+            <div class="left">
+                <div>
+                    <p>상호명 : 주식회사 휴브아이웨어</p>
+                    <p>대표 : 황윤기</p>
+                    <p>주소 : 대구광역시 서구 달서천로 399(원대동1가)</p>
+                    <p>사업자 등록번호 : 504-81-97189</p>
+                    <p>대표번호 : 053-383-0402</p>
+
+                    <p>팩스번호 : 053-357-1050</p>
+                    <p>메일 : hube@hubeeyewear.com</p>
+                </div>
+                <p>COPYRIGHT © 2020 PLA_STA. All RIGHTS RESERVED.</p>
+            </div>
+            <!-- right -->
+            <!-- 개인 회사 연결 -->
+            <div class="right">
+                <!-- 회사소개 -->
+                <a href="" class="">회사소개</a>
+                <!-- 개인정보처리방침 -->
+                <a href="">개인정보처리방침</a>
+                <!-- 이용약관 -->
+                <a href="">이용약관</a>
+
+            </div>
+
+        </div>
+    </footer>
     
 </body>
 </html>
