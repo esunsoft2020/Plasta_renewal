@@ -8,6 +8,7 @@
 
     <style>
         *{margin: 0px; padding: 0px; }
+        #nc{font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;}
         @media(max-width:1280px){#nc{font-size:14px}}
         @media(max-width:976px) {#nc{font-size:13px}}
         @media(max-width:568px) {#nc{font-size:11px; }}
@@ -16,9 +17,21 @@
             background-position: right center;
             background-repeat: no-repeat; background-size: cover;}
         @media(max-width:1480px) {#nc_mainimg{ height: 50vw;}} 
-        #nc_title{ display: table-cell; vertical-align: middle; color:white; font-size: 2em; font-family: 'Poppins', sans-serif; font-weight: 600;
+        #nc_title{ display: table-cell; vertical-align: middle; color:white; font-size: 2em; font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif; font-weight: 600;
                   letter-spacing: 0.2em; padding: 0 5%;}
         @media(max-width:568px){#nc_title{ text-align: center;}}
+        #nc_listbox{padding: 10px 0;clear: both;margin: 20px 0;}
+        /* #nc_ul {display: block; float: right; margin: 0; padding: 0 0 0 1px; list-style: none;}
+        #nc_li {float: left;position: relative;font-size: 0.92em;padding: 5px 0;font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;} */
+        /* nav 메뉴 */
+        #nc2{padding: 10px 0;clear: both;margin: 20px 0; display: block;}
+        nav ul{list-style: none;float: right;margin: 0;padding: 0 0 0 1px;}
+        nav ul li{display: inline-flex;margin-left: 1em;}
+        nav ul li a{text-decoration: none;text-transform: uppercase;color: rgb(95, 95, 95);line-height: 1em; font-size:inherit; }
+        nav ul li a:hover{text-decoration: underline;}
+
+
+        
     </style>
 
 </head>
@@ -27,9 +40,25 @@
         <div id="nc_mainimg">
             <h3 id="nc_title">Collection</h3>
         </div>
-    </div>
-    <div id="nc2">
-        <div></div>
+        <div id="nc2">
+            <nav>
+                <ul>
+                    <li><a href="#">판매많은순</a></li>
+                    <li>|</li>
+                    <li><a href="#">낮은 가격순</a></li>
+                    <li>|</li>
+                    <li><a href="#">높은 가격순</a></li>
+                    <li>|</li>
+                    <li><a href="#">평점 높은순</a></li>
+                    <li>|</li>
+                    <li><a href="#">후기 많은순</a></li>
+                    <li>|</li>
+                    <li><a href="#">최근 등록순</a></li>
+
+                </ul>
+            </nav>
+            
+        </div>
     </div>
 </body>
 </html>
