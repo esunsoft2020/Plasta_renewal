@@ -25,6 +25,7 @@
     <!--  800px 이상 : desktop monitor -->
     <link rel="stylesheet" href="" media="(min-width: 800px)">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -162,80 +163,104 @@
             <section class="best">
                 <h3>BEST ITEMS</h3>
 
-                <div class="all_wrap">
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
+                <div class="wrap">
+                    <div class="box_wrap">
+                        <div class="box">
+                            <div class="content">
+                                <div  class="card myBox">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-113(Cool Gray)">
+                                    </div>
+                                <div class="info">
+                                    <a href="">PS-113(Cool Gray)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <a href="">PS-113(Cool Gray)</a>
-                                <p>전화문의</p>
+                            <div class="content myBox"> 
+                                <div  class="card">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-113(LW. Gray)">
+                                </div>
+                                <div class="info">
+                                    <a href="">PS-113(LW. Gray)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
+                            <div class="content myBox">
+                                <div  class="card">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-112(LW. Gray)">
+                                </div>
+                                <div class="info">
+                                    <a href="">PS-112(LW. Gray)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <a href="">PS-113(LW. Gray)</a>
-                                <p>전화문의</p>
+                            <div class="content myBox">
+                                <div  class="card">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-112(Demi Brown)">
+                                </div>
+                                <div class="info">
+                                    <a href="">PS-112(Demi Brown)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
-                        </div>
-                       
-                    </div>
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
+                            <div class="content myBox">
+                                <div  class="card">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-110(Brown)">
+                                </div>
+                                <div class="info">
+                                    <a href="">PS-110(Brown)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <a href="">PS-112(LW. Gray)</a>
-                                <p>전화문의</p>
-                            </div>
-                        </div>
-                     
-                    </div>
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
-                            </div>
-                            <div class="info">
-                                <a href="">PS-112(Demi Brown)</a>
-                                <p>전화문의</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
-                            </div>
-                            <div class="info">
-                                <a href="">PS-110(Brown))</a>
-                                <p>전화문의</p>
-                            </div>
-                        </div>
-                
-                    </div>
-                    <div class="item_wrap">
-                        <div class="item">
-                            <div  class="card">
-                                <img src="./image/eun/item/item.png" alt="">
-                            </div>
-                            <div class="info">
-                                <a href="">PS-110(Black)</a>
-                                <p>전화문의</p>
+                            <div class="content myBox">
+                                <div  class="card">
+                                    <a href=""></a>
+                                    <img src="./image/eun/item/item.png" alt="PS-110(Black)">
+                                </div>
+                                <div class="info">
+                                    <a href="">PS-110(Black)</a>
+                                    <p>전화문의</p>
+                                </div>
                             </div>
                         </div>
-                      
-                        
                     </div>
                 </div>
+                <button class="prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  
+                  <script>
+                      $(".myBox").click(function() {
+                        window.location = $(this).find("a").attr("href"); 
+                        return true;
+                        });
+
+                        $(document).ready(function() {
+                            $('.prev').click(function() {
+                                $('.box').stop().animate({'margin-left': '-400px'
+                                }, function() {
+                                    $('.box div:first-child').appendTo('.box');
+                                    $('.box').css({'margin-left': '-200px'});
+                                });
+                            });
+  
+                            $('.next').click(function() {
+                                $('.box').stop().animate({'margin-left': '0px'}, function() {
+                                    $('.box div:last-child').prependTo('.box');
+                                    $('.box').css({'margin-left': '-200px'});
+                                });
+                            });
+                        });
+                  </script>
                 
             </section>
 
