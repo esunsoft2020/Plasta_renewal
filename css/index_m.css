@@ -1,0 +1,227 @@
+*{padding: 0; margin: 0;
+/* border: 1px dotted red; */
+}
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+p{padding: 0; margin: 0;}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+}
+header img{width: 100%;}
+
+header div a div{ 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header div a div.right{
+    top: 50%;
+    right: 5%;
+}
+header div a div.left{
+    top: 50%;
+    left: 5%;
+}
+
+header a{ color: white; position: relative;}
+header a:hover{ color: white;}
+header div a div img{width: 30px; height:40px;}
+
+
+/* 상단 고정 */
+
+
+/* 하단 고정 */
+#top_drop{
+    display: inline-block;
+    position: fixed;
+
+    bottom: 1%;
+    right: 10px;
+    width: 50px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+}
+
+/* 팝업 작업 */
+
+
+
+/* article */
+article{margin-top: 50px;}
+
+/* section */
+section{padding: 30px 0px; font-size: 12px;}
+
+/* section : dragImage */
+section.dragImage{
+    background-color: #c8aa9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.dragImage h3{font-size: 15px;}
+section.dragImage a{ margin-bottom: 20px;}
+
+
+/* section : ABOUT PLASTA */
+section.about{ margin: 30px 0px 0px 0px; color: #c8aa9a; position: relative;}
+#aboutTitle{display: flex; align-items: center;}
+section div.line{ width: 80px; height: 1px; background-color: #c8aa9a;}
+section div#aboutTitle h3{font-size: 11px; margin-left: 10px;}
+section.about div.content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#aboutImage{
+    margin-top: 70px;
+    width: 90%;
+    margin-left: 5%;
+}
+section.about div.str{
+    background-color: #1d293f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+section.about div.str div{ display: flex;}
+section.about div.str div div.line{margin: 20px 10px 0px 0px; height: 2px;}
+
+
+/* section : BEST ITEMS */
+/* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
+section.best{background-color: #F8F8F8; margin-top: 0px;}
+section.best h3{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 14px;
+}
+section.best>div>div{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+section.best .card{height: 180px;}
+section.best .card img{margin-top: 35px;}
+section.best .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all_wrap {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_wrap{overflow: hidden;}
+
+.item{ 
+    width: 45%;
+    margin-left: -45%;
+}
+
+.item:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    margin: 0;
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+
+

@@ -1,12 +1,10 @@
 let num=1;
 function changeImage(){
     setTimeout(show ,2000);
-};
-
+}
 function show(){
     let img1;
     let img2;
-
     switch(num){
         case 1:
             img1 = "./image/eun/top/top1_1.png";
@@ -18,7 +16,47 @@ function show(){
             break;
     }
     num++;
-    if(num==3) num=1;
-    document.getElementById('leftImage').src = img1;
-    document.getElementById('rightImage').src = img2;
-};  
+    if(num>=3) num=1;
+    // unfade(document.getElementById("leftImage"));
+    document.getElementById("leftImage").src = img1;
+    document.getElementById("rightImage").src = img2;
+    
+}
+
+function unfade(element) {
+    let op = 0.7;  // initial opacity
+    element.style.display = 'block';
+    let timer = setTimeout(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + 100 + ")";
+        op += op * 0.1;
+    }, 2000);
+}
+
+
+$(document).ready(function() {
+    $('.prev').click(function() {
+      $('.box').stop().animate({
+        'margin-left': '-400px'
+      }, function() {
+        $('.box div:first-child').appendTo('.box');
+        $('.box').css({
+          'margin-left': '-200px'
+        });
+      });
+    });
+  
+    $('.next').click(function() {
+      $('.box').stop().animate({
+        'margin-left': '0px'
+      }, function() {
+        $('.box div:last-child').prependTo('.box');
+        $('.box').css({
+          'margin-left': '-200px'
+        });
+      });
+    });
+  });
