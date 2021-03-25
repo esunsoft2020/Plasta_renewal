@@ -35,6 +35,8 @@ header div a div.left{
     left: 5%;
 }
 
+header div a p{margin: 0px 20px; font-weight: bold;}
+
 header a{ color: white; position: relative;}
 header a:hover{ color: white;}
 header div a div img{width: 30px; height:40px;}
@@ -394,7 +396,7 @@ aside#pop{
     position: fixed;
     top: 10%;
     left: 5%;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255, 0.8);
     width: 450px;
     height: 350px;
     border-radius: 0px 10px ;
