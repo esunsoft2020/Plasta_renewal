@@ -25,6 +25,24 @@
     <link rel="stylesheet" href="" media="(min-width: 800px)">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.prev').click(function() {
+                $('.box').stop().animate({'margin-left': '-400px'}, function() {
+                    $('.box>div:first-child').appendTo('.box');
+                    $('.box').css({'margin-left': '-200px'});
+                });
+            });
+
+            $('.next').click(function() {
+                $('.box').stop().animate({'margin-left': '0px'}, function() {
+                    $('.box>div:last-child').prependTo('.box');
+                    $('.box').css({'margin-left': '-200px'});
+                });
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -169,7 +187,7 @@
                                 <div  class="card myBox">
                                     <a href="http://plasta.co.kr/shop/item.php?it_id=1604560830"></a>
                                     <img src="./image/eun/item/item.png" alt="PS-113(Cool Gray)">
-                                    </div>
+                                </div>
                                 <div class="info">
                                     <a href="http://plasta.co.kr/shop/item.php?it_id=1604560830">PS-113(Cool Gray)</a>
                                     <p>전화문의</p>
@@ -235,166 +253,148 @@
                       <img src="./image/eun/article/right.png" alt="right" style="width: 100%;">
                   </div>
                
-                  
-                  <script>
-                      $(".myBox").click(function() {
-                        window.location = $(this).find("a").attr("href"); 
-                        return true;
-                        });
-
-                        $(document).ready(function() {
-                            $('.prev').click(function() {
-                                $('.box').stop().animate({'margin-left': '-400px'
-                                }, function() {
-                                    $('.box>div:first-child').appendTo('.box');
-                                    $('.box').css({'margin-left': '-200px'});
-                                });
-                            });
-  
-                            $('.next').click(function() {
-                                $('.box').stop().animate({'margin-left': '0px'}, function() {
-                                    $('.box>div:last-child').prependTo('.box');
-                                    $('.box').css({'margin-left': '-200px'});
-                                });
-                            });
-                        });
-                  </script>
-                
             </section>
 
             <!-- BrandStory 연결 -->
-            <section>
-                <img src="./image/eun/bottom/bottom.png" alt="">
-                <a href="">Brand Story</a>
+            <section class="brand">
+                <img src="./image/eun/bottom/bottom.jpg" alt="BrandStory">
+                <div>
+                    <p>선택의 즐거움과 완성되는 스타일로 play with us</p>
+                    <p>매 순간 당신이 당신다울 수 있도록 stay in you</p>
+                    <br><br>
+                    <a href="">BRAND STORY</a>
+                </div>
             </section>
 
             <!-- PLASTIC ITEM -->
-            <section>
+            <section class="plastic">
                 <!-- 왼 -->
-                <div>
-                    <img src="./image/eun/article/article_left.png" alt="">
+                <div class="person">
+                    <img src="./image/eun/article/article_left.png" alt="person">
                 </div>
                 <!-- 오른.위 -->
-                <div>
+                <div class="title">
                     <h3>PLASTIC ITEM</h3>
                     <a href="" class="more">VIEW MORE</a>
                 </div>
                 <!-- 오른.아래 -->
-                <div>
-                    <table>
-                        <tr>
-                            <td>
+                <div class="item">
+                    <ul>
+                        <li>
+                            <div class="card myBox">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560766"></a>
                                 <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
+                            </div>
+                            <div class="info">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560766" class="item">PS-116 (Khaki Gray)</a>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div class="card myBox">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560765"></a>
                                 <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
+                            </div>
+                            <div class="info">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560765" class="item">PS-116 (Red Pink)</a>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div class="card myBox">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560764"></a>
                                 <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
-                                <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                        
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="" class="item">PS-116(Khaki Gray)</a>
-                            </td>
-                            <td>
-                                <a href="" class="item">PS-116(Red Pink)</a>
-                            </td>
-                            <td>
-                                <a href="" class="item">PS-116(Red Bean)</a>
-                            </td>
-                            <td>
-                                <a href="" class="item">PS-116(Demi Brown)</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                            <div class="info">
+                                <a href="http://plasta.co.kr/shop/item.php?it_id=1604560764" class="item">PS-116 (Red Bean)</a>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            
+                        <div class="card myBox">
+                            <a href="http://plasta.co.kr/shop/item.php?it_id=1604560763"></a>
+                            <img src="./image/eun/item/item.png" alt="item">
+                        </div>
+                        <div class="info">
+                            <a href="http://plasta.co.kr/shop/item.php?it_id=1604560763" class="item">PS-116 (Demi Brown)</a>
+                            <p><strong>전화문의</strong></p>
+                        </div>
+                        </li>
+                    </ul>
+
                 </div>
 
             </section>
 
             <!-- METAL ITEM -->
-            <section>
+            <section class="metal">
                 <!-- 왼.위 -->
-                <div>
+                <div class="title">
                     <h3>METAL ITEM</h3>
                     <a href="" class="more">VIEW MORE</a>
                 </div>
                 <!-- 왼.아래 -->
-                <div>
-                    <table>
-                        <tr>
-                            <td>
+                <div class="item">
+                    <ul>
+                        <li>
+                            <div class="card myBox">
+                                <a href=""></a>
                                 <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
-                                <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
-                                <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                            <td>
-                                <img src="./image/eun/item/item.png" alt="item">
-                            </td>
-                        
-                        </tr>
-                        <tr>
-                            <td>
+                            </div>
+                            <div class="info">
                                 <a href="" class="item">PS-112M(L. W. Gray)</a>
-                            </td>
-                            <td>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card myBox">
+                                <a href=""></a>
+                                <img src="./image/eun/item/item.png" alt="item">
+                            </div>
+                            <div class="info">
                                 <a href="" class="item">PS-112M(Red Bean)</a>
-                            </td>
-                            <td>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card myBox">
+                                <a href=""></a>
+                                <img src="./image/eun/item/item.png" alt="item">
+                            </div>
+                            <div class="info">
                                 <a href="" class="item">PS-112M(Brown)</a>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card myBox">
+                                <a href=""></a>
+                                <img src="./image/eun/item/item.png" alt="item">
                             </td>
-                            <td>
+                            </div>
+                            <div class="info">
                                 <a href="" class="item">PS-112M(Black)</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                            <td>
-                                <p>전화문의</p>
-                            </td>
-                        </tr>
-                    </table>
+                                <p><strong>전화문의</strong></p>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
                 <!-- 오른 -->
-                <div>
-                    <img src="./image/eun/article/article_right.png" alt="">
+                <div class="person">
+                    <img src="./image/eun/article/article_right.png" alt="person">
                 </div>
             </section>
 
             <!-- bottom -->
-            <section>
-                <img src="./image/eun/bottom/bottom1.png" alt="">
-                <img src="./image/eun/bottom/bottom2.png" alt="">
+            <section class="bottom">
+                <img id="b1" src="./image/eun/bottom/bottom1.png" alt="">
+                <img id="b2" src="./image/eun/bottom/bottom2.png" alt="">
             </section>
             
         </article>
@@ -430,6 +430,14 @@
 
             </div>
         </footer>
+
+        <script>
+             $(".myBox").click(function() {
+          window.location = $(this).find("a").attr("href"); 
+          return true;
+        });
+
+        </script>
 
     </div>
     
