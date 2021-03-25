@@ -110,9 +110,11 @@ section.dragImage{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 section.dragImage h3{font-size: 15px;}
 section.dragImage a{ margin-bottom: 20px;}
+/* section.dragImage div img.w-100{height: 400px; object-fit: cover; margin-bottom: 20px;} */
 
 
 /* section : ABOUT PLASTA */
@@ -158,7 +160,7 @@ section.best .card{
     height: 240px; padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-section.best .card img{margin-top: 85px;}
+section.best .card img{margin-top: 50%;}
 section.best .info{
     display: flex;
     flex-direction: column;

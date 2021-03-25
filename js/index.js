@@ -40,6 +40,8 @@ function unfade(element) {
 function clickClose(){
   let pop = document.getElementById('pop');
   pop.style.display = "none";
+  document.getElementById('video').src = "";
+
 }
 
 

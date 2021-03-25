@@ -111,15 +111,17 @@ section.dragImage{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
-section.dragImage h3{font-size: 15px;}
-section.dragImage a{ margin-bottom: 20px;}
+section.dragImage h3{font-size: 15px; margin-top: 25px;}
+section.dragImage a{ margin-bottom: 25px; margin-top: 10px;}
+section.dragImage div img.w-100{height: 400px; object-fit: cover; margin-bottom: 20px;}
 
 
 /* section : ABOUT PLASTA */
 section.about{ margin: 30px 0px 0px 0px; color: #c8aa9a; position: relative;}
 #aboutTitle{display: flex; align-items: center;}
-section div.line{ width: 80px; height: 1px; background-color: #c8aa9a;}
+section div.line{ width: 140px; height: 1px; background-color: #c8aa9a;}
 section div#aboutTitle h3{font-size: 11px; margin-left: 10px;}
 section.about div.content{
     display: flex;
@@ -131,54 +133,54 @@ section.about div.content{
     margin-left: 5%;
 }
 section.about div.str{
+    height: 420px;
     background-color: #1d293f;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 0px;
 }
-section.about div.str div{ display: flex;}
+section.about div.str>div{ display: flex; margin: 40px 0 0 0}
 section.about div.str div div.line{margin: 20px 10px 0px 0px; height: 2px;}
+section.about div.str p{font-size: 14px; margin-top: 8px;}
 
 
 /* section : BEST ITEMS */
 /* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
-section.best{ margin-top: 0px; position: relative;}
+section.best{ margin-top: 0px; position: relative; height: 600px;}
 section.best h3{ 
     display: flex; 
     align-items: center; 
     justify-content: center;
-    font-size: 14px;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
-/* section.best>div>div{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-} */
 section.best .card{
-    height: 240px; padding: 0px 10px 0px 10px;
+    height: 380px; padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-section.best .card img{margin-top: 85px;}
+section.best .card img{margin-top: 50%;}
 section.best .info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 40px;
     height: 20px;
 }
 
+section.best div.info a{color: black;}
+section.best div.info p{margin-bottom: 10px;}
+
 section.best .wrap {
-    width: 500px;
-    height: 300px;
+    width: 90%;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
 }
 
 section.best .box_wrap{
-    width: 400px;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -198,12 +200,12 @@ section.best .box:after{
 section.best .content {
     float: left;
     width: 45%;
-    height: 280px;
+    height: auto;
     margin-left: 5px;
     margin-right: 5px;
 }
 section.best .prev {
-    width: 20px;
+    width: 50px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -214,7 +216,7 @@ section.best .prev {
 }
   
 section.best .next {
-    width: 20px;
+    width: 50px;
     position: absolute;
     top: 50%;
     right: 0;
@@ -233,48 +235,56 @@ section.brand{
     color: #c8aa9a;
 }
 section.brand img{
-    width: 300%;
-    height: 250px;
-    margin-left: -100%;
+    width: 200%;
+    height: 350px;
+    margin-left: -50%;
 }
 
 section.brand div{
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+section.brand div p{margin-bottom: 5px; font-size: 14px;}
 section.brand a{
     border: 1px solid #c8aa9a; 
     color: #c8aa9a;
     font-size: 10px;
-    padding: 1px 40px;
+    padding: 3px 50px;
 }
 
 
 
 /* section : PLASTIC ITEM */
-section.plastic{padding: 0px;}
+section.plastic{padding: 0px; display: inline-block;}
 section.plastic div.person{
     overflow: hidden;
-    height: 300px;
+    height: 850px;
+    float: left;
 }
 section.plastic .person img{
-    width: 100%;
-    height: auto;
-    margin-top: -30%;
+    width: 300px;
+    height: 820px;
+    object-fit: cover;
+    margin-left: -10%;
+    margin-top: 60px;
 }
 section.plastic div.title{
-    margin: 30px 0px;
+    width: 200px;
+    margin: 75px 0px 30px 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F8F8F8;
 }
+section.plastic div.title h3{font-size: 15px;}
+section.plastic div.title a{font-size: 11px; margin-top: 10px;}
+section.plastic div.info a{font-size: 13px;}
+section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.plastic .item{
     width: 100%;
@@ -282,15 +292,16 @@ section.plastic .item{
 }
 
 section.plastic .item .card{
-    width: 190px;
-    height: 300px;
-    margin-left: 20px;
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 section.plastic .item .card img{
-    margin-top: 100px; width: 100%;
+    margin-top: 80px; width: 100%;
 }
 section.plastic .item .info{
-    margin: 15px 0px 15px 30px;
+    margin: 15px 0px 15px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,60 +315,69 @@ section.plastic .item li{
 
 
 /* section : metal */
-section.metal{ display: flex; flex-direction: column-reverse; position: relative;}
+section.metal{ 
+    width: 100%;
+    margin-top: 50px; padding:  0px; 
+    display: inline-block;
+}
 section.metal div.person{
     overflow: hidden;
-    height: 250px;
+    height: 850px;
+    float: right;
 }
 section.metal .person img{
-    width: 100%;
-    height: auto;
-    margin-top: -38%;
+    width: 200px;
+    height: 820px;
+    object-fit: cover;
+    margin-top: -10px;
 }
 section.metal div.title{
-    margin: 30px 0px;
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 30px;
+    left: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F8F8F8;
-    position: absolute;
-    top: 280px;
-    left: 40%;
 }
+section.metal div.title h3{font-size: 15px;}
+section.metal div.title a{font-size: 11px; margin-top: 10px;}
+section.metal div.info a{font-size: 13px;}
+section.metal div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.metal .item{
-    margin-top: 10px;
     width: 100%;
     margin-left: 5%;
 }
 
 section.metal .item .card{
-    width: 190px;
-    height: 300px;
-    margin-left: 20px;
+    width: 200px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
 section.metal .item .card img{
-    margin-top: 100px; width: 100%;
+    margin-top: 40%; width: 100%;
 }
 section.metal .item .info{
-    margin: 15px 0px 15px 30px;
+    margin: 15px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 section.metal .item .info a{width: auto;}
-section.metal .item ul{
-    position: absolute;
-    margin-top: 80px;
-}
+
+section.metal .item ul{width: 80%;}
 section.metal .item li{
     cursor: pointer;
     display: inline-block;
 }
 
 /* section : bottom */
-section.bottom{margin-top: 800px; padding-bottom: 0;}
+section.bottom{padding-bottom: 0; margin-top: 0;}
 section.bottom #b1, #b2{width: 100%;}
 
 /* footer a{text-decoration: none;} 기본적으로 필요 */
