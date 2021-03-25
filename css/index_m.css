@@ -168,14 +168,13 @@ section.best .wrap {
 }
 
 section.best .box_wrap{
-    width: 450px;
+    width: 400px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 section.best .box{ 
     width: 100%;
-    margin-left: -10px;
     margin-top: 15px;
     display: flex;
 }
@@ -190,13 +189,35 @@ section.best .content {
     float: left;
     width: 45%;
     height: 280px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 section.best button{
     position: absolute;
     background-color: black;
+}
+
+section.best .prev {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(32px, -50%);
+    -ms-transform: translate(32px, -50%);
+    -o-transform: translate(32px, -50%);
+    transform: translate(32px, -50%);
+}
+  
+section.best .next {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-16px, -50%);
+    -ms-transform: translate(-16px, -50%);
+    -o-transform: translate(-16px, -50%);
+    transform: translate(-16px, -50%);
 }
 
 

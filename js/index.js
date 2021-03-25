@@ -23,6 +23,7 @@ function show(){
     
 }
 
+// fade 효과 적용 필요
 function unfade(element) {
     let op = 0.7;  // initial opacity
     element.style.display = 'block';
