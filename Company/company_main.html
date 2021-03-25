@@ -49,15 +49,55 @@
             </div>
         </div>
 
+
+
+
+
+
+
+        <style>
+            #map{
+                width: 100%;
+                height: 600px;
+            }
+        </style>
+
+        <!-- Google Map API를 사용하는 script 추가 및 키발급 -->
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEKG0AVCRt-_QxlvkWn1hwo576aM_G3Q&callback=initMap">
+        </script>
+
+        <script>
+            function showMap(){
+                var e= document.getElementById('map');
+                new google.maps.Map( e, {center:{lat:37.562161, lng:127.035199},zoom:14} );
+                var sj= new google.maps.LatLng(37.595224, 126.908780);
+                var opts={
+                    center: sj,
+                    zoom: 14
+                }
+                var map= new google.maps.Map( e, opts);
+                var marker= new google.maps.Marker({
+                    position: sj,
+                    title: "석종점"
+                });
+                marker.setMap(map);
+            }
+        </script>
+
+
+
+
+
         <div id="cpmap">
             <div id="cpmap_btnbox">
-                <button class="btn btn-promary" id="cpmap_btn1">석종점</button>
+                <button class="btn btn-promary" id="cpmap_btn1" onclick="showMap()">석종점</button>
                 <button  class="btn btn-promary"id="cpmap_btn2">응기점</button>
                 <button class="btn btn-promary" id="cpmap_btn3">은선점</button>
                 <button  class="btn btn-promary"id="cpmap_btn4">재용점</button>
                 <button  class="btn btn-promary"id="cpmap_btn5">하윤점</button>
             </div>
-            <div id="cpmap_view"></div>
+            <div id="map"></div>
         </div>
 
         
