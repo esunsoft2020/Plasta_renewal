@@ -37,5 +37,9 @@ function unfade(element) {
     }, 2000);
 }
 
+function clickClose(){
+  let pop = document.getElementById('pop');
+  pop.style.display = "none";
+}
 
 
