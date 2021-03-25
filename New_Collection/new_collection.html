@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Collection</title>
 
     <style>
         *{margin: 0px; padding: 0px; }
@@ -24,11 +24,23 @@
         /* #nc_ul {display: block; float: right; margin: 0; padding: 0 0 0 1px; list-style: none;}
         #nc_li {float: left;position: relative;font-size: 0.92em;padding: 5px 0;font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;} */
         /* nav 메뉴 */
-        #nc2{padding: 10px 0;clear: both;margin: 20px 0; display: block;}
+        #nc2{padding: 10px 0;clear: both;margin: 20px 0; display: block; margin-right: 60px;}
         nav ul{list-style: none;float: right;margin: 0;padding: 0 0 0 1px;}
         nav ul li{display: inline-flex;margin-left: 1em;}
-        nav ul li a{text-decoration: none;text-transform: uppercase;color: rgb(95, 95, 95);line-height: 1em; font-size:inherit; }
+        nav ul li a{text-decoration: none;text-transform: uppercase;color: rgb(95, 95, 95);line-height: 1em; font-size:inherit; margin-left: -5px;}
         nav ul li a:hover{text-decoration: underline;}
+        @media(max-width:970px){#nc2{margin-right: 20px;}}
+        @media(max-width:970px){#nc2{margin-right: 5px;}}
+        @media(max-width:670px){#nc2 ul{margin: 0;padding: 0 0 0 1px;list-style: none;}}
+        @media(max-width:670px){#nc2 ul li{float: left;position: relative;font-size: 0.92em;padding: 5px 0;}}
+
+        @media(max-width:260px){#nc2 ul{position: fixed;}}
+        #nc_item{text-align: center;margin: 60px 0;}
+        #nc_itembtn{background-color: lightgray;background-size: 35px;width: 20px;height: 20px; border: lightgray;}
+        @media(max-width: 560px){#nc_itembtn{width: 15px; height: 15px;}}
+        #nc_itemtext{padding: 50px 0;text-align: center;font-size: 15px;color:grey;}
+        
+        
 
 
         
@@ -43,22 +55,29 @@
         <div id="nc2">
             <nav>
                 <ul>
-                    <li><a href="#">판매많은순</a></li>
-                    <li>|</li>
-                    <li><a href="#">낮은 가격순</a></li>
-                    <li>|</li>
-                    <li><a href="#">높은 가격순</a></li>
-                    <li>|</li>
-                    <li><a href="#">평점 높은순</a></li>
-                    <li>|</li>
-                    <li><a href="#">후기 많은순</a></li>
-                    <li>|</li>
-                    <li><a href="#">최근 등록순</a></li>
-
+                    <li><a href="#">판매많은순 |</a></li>
+                   
+                    <li><a href="#"> 낮은 가격순 |</a></li>
+                    
+                    <li><a href="#"> 높은 가격순 |</a></li>
+                    
+                    <li><a href="#"> 평점 높은순 |</a></li>
+                    
+                    <li><a href="#"> 후기 많은순 |</a></li>
+                    
+                    <li><a href="#"> 최근 등록순 </a></li>
+ 
                 </ul>
             </nav>
             
         </div>
+
+
+        <div id="nc_item">
+            <button type="button" id="nc_itembtn"></button>
+            
+        </div>
+        <div id="nc_itemtext">등록된 상품이 없습니다.</div>
     </div>
 </body>
 </html>
