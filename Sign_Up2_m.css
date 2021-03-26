@@ -124,7 +124,6 @@ footer div div.right{
 #top_drop{
     display: inline-block;
     position: fixed;
-    
     bottom: 1%;
     right: 10px;
     width: 50px;
@@ -169,65 +168,3 @@ html {
     vertical-align:middle;
     padding-left: 10px;
 } 
-
-#fregister_term2{
-    width: 100%;
-    height: auto;
-    line-height: 40px;
-    text-align: left;
-    margin-bottom: 30px;
-}
-#fregister_term2 h2{
-    display: inline;
-    text-align: left;
-    width: 640px;
-    height: 41px;
-    margin: 0px 15px;
-}
-#cb2{
-    display: inline;
-    float: right;
-    margin: 0px 15px;
-   }
-#fregister_term2_title{
-    width: 100%;
-    border: 1px solid #e6e6e6;
-}
-table{
-    text-align: center;
-    width: 100%;
-    padding: 15px;
-}
-#table{
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    align-content: center;
-}
-table th{
-    border: 1px solid #ccc;
-    background-color: #e0e0e0;
-    height: 40px;
-    width: 33%;
-}
-table td{
-    border: 1px solid #e0e0e0;
-    color: #787878;
-    height: 60px;
-    width: 33%;
-}
-#btn input{
-    display: flex;
-    background-color: #3d3e3e;
-    width: 250px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    border: 0;
-    outline: 0;
-    opacity: 0.8;
-}
-#btn input:hover{
-    opacity: 1;
-}

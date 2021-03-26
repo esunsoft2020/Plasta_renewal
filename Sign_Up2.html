@@ -7,8 +7,18 @@
     <title>회원가입|Pla_sta</title>
     <link rel="stylesheet" href="./Sign_Up2.css" media="(min-width:600px)">
     <link rel="stylesheet" href="./Singn_Up2_M.css" media="(max-width:600px)">
+    <script type="text/javascript">
+	/* 문자 새로고침 */
+	function refresh_captcha(){
+		document.getElementById("capt_img").src="captcha.php?waste="+Math.random(); 
+        //capt_img id를 불러와 문구들을 랜덤으로 돌린다
+	}
+    </script>
 </head>
 <body>
+
+    
+
     <div id="page">
         <header>
             <div id="logo" style="position: absolute;">
@@ -27,18 +37,14 @@
         </div>
     </div>
 
-
-    
-    
-
     <div id="contents">
         <form name="fregister" id="fregister" autocomplete="off" onsubmit="return fregister_submit(this); " autocomplete="off">
             <div id="id_pw">
                 <div>
-                    <h2><strong>사이트 이용정보 입력</strong></h2>
+                    <h2 ><strong>사이트 이용정보 입력</strong></h2>
                     <div>
                         <input type="text" name="id_edit" id="id_edit" placeholder="아이디">
-                        <p style="color: blue; font-size: 12px; padding-bottom: 10px;">영문자,숫자,_만 입력가능.최소3자이상 입력하세요.</p>
+                        <p style="color: blue; font-size: 12px; padding-bottom: 10px; text-align: left;">영문자,숫자,_만 입력가능.최소3자이상 입력하세요.</p>
                         <input type="password" name="pw_eidt" id="pw_eidt" placeholder="비밀번호" style="margin-bottom: 5px;">
                         <input type="password" name="pw_eidt" id="pw_eidt" placeholder="비밀번호확인"> 
                     </div>
@@ -47,44 +53,47 @@
 
 
             <section id="fregister_term2">
-                <div id="fregister_term2_title">
-                    <h2><strong>개인정보처리방침안내</strong></h2>
-                    <div id="cb2" >
-                        <input type="checkbox" name="cb2" value="1" id="chk2_box">
-                        <label for="chk2_box">개인정보처리방침안내의 내용에 동의합니다.</label>
+                    <h2><strong>개인정보 입력</strong></h2>
+                    <div id="privacy">
+                        <input type="text" name="privacy_name" id="privacy_name"  placeholder="이름">
+                        <p style="color: blue; font-size: 12px; text-align: left;">공백없이 한글,영어,숫자만 입력 가능(한글2자, 영문4자 이상)</p>
+                        <p style="color: blue; font-size: 12px; text-align: left; margin-bottom: 15px;">닉네임을 바꾸시면 앞으로 60일 이내에는 변경 할수 없습니다.</p>
+                        <input type="text" name="pw_eidt" id="pw_eidt" placeholder="닉네임" style="margin-bottom: 5px;">
+                        <input type="email" name="pw_eidt" id="pw_eidt" placeholder="E-mail"> 
+                    </div>
+            </section>
+
+            <section id="privacy_setting">
+                <h2><strong>기타 개인설정</strong></h2>
+                <div style=" margin-bottom: 5px;">
+                    <h4><strong>메일링서비스</strong></h4>
+                    <input type="checkbox" name="ch01" id="ch01">
+                    <label for="ch01" style="font-size: 12px;">정보 메일을 받겠습니다.</label>
+                </div>
+                <div>
+                    <h4><strong>정보공개</strong></h4>
+                    <input type="checkbox" name="ch02" id="ch02">
+                    <label for="ch02">다른분들이 나의 정보을 볼수 있도록 합니다.</label>
+                    <p style="color: blue; font-size: 12px; padding-bottom: 10px; text-align: left;">정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.</p>
+                </div>
+                <div style=" margin-bottom: 10px;">
+                    <h4><strong>자동등록방지</strong></h4>
+                    <input type="checkbox" name="ch01" id="ch01">
+                    <label for="ch01">정보 메일을 받겠습니다.</label>
+                </div>
+                <form method="post" action="join_ok.php" id="captcha">
+                    <h4>자동가입방지문구 입력</h4>
+                    <div style="align-items: center; max-height: 40px;">
+                        <img src="captcha.php" alt="captcha" title="captcha" id="capt_img"/>
+                        <input type="text" name="captcha_edt" id="captcha_edt" style="margin: 0px;"/>
+                        <button onclick="sound_captcha();" type="button" style="background-image: url('./image_young/captcha_sound.png'); width: 40px; height: 40px;"  ></button>
+                        <button onclick="refresh_captcha();" style="scroll-behavior: unset; background-image: url(./image_young/captcha_refresh.png);width: 40px; height: 40px;"></button>
                     </div>
                     
-                </div>
-                <section id="table">
-                    <table >
-                        <tr>
-                            <th colspan="2">목적</th>
-                        </tr>
-                        <tr>
-                            <th>항목</td>
-                            <th>보유기간</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">이용자 식별 및 본인 여부 확인</td>
-                        </tr>
-                        <tr>
-                            <td >아이디, 이름, 비밀번호</td>
-                            <td>회원 탈퇴 시까지</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">고객서비스이용에 관한 동지,<br>CS대응을 위한 이용자 식별</td>
-                        </tr>
-                        <tr>
-                            <td>연락처(이메일, 휴대전화번호)</td>
-                            <td>회원 탈퇴 시까지</td>
-                        </tr>   
-                    </table>
-                </section>
+                </form>
+                
+            
             </section>
-        </form>
-        <div id="btn">
-            <input type="submit" value="회원가입">
-        </div>
             <!-- wewe홈페이지 이동 -->
             <div id="wewe">
                 <a href="http://wewe2020.co.kr" target="_blank">
@@ -98,7 +107,6 @@
                 </a>
             </div>
         </div>
-            
     </div>
     <footer style="background-color: black;">
         <img src="./image_young/bottom/footer_logo.png" alt="logo">
