@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasta_renewal</title>
+    
+     <!-- 모바일 -->
+     <link rel="stylesheet" href="./CSS/mobile.css" media="(max-width:800px)">
+
+     <!-- 테블릿, 데스크탑 -->
+     <link rel="stylesheet" href="./CSS/desktop.css" media="(min-width:800px)">
+     
+     <meta charset="UTF-8">
+    <title>Layout3-1</title>
+    <style>
+   body {
+          max-width: 1920px;
+          margin: 0 auto;
+          background-color: white;
+          
+        }
+  
+        header {
+          background: url(header.jpg) no-repeat center;
+          height: auto;
+        }
+  
+        section {
+          padding: 20px;
+        }
+  
+        p {
+          line-height: 1.5;
+        }
+  
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+        }
+        form{
+            font-size: 16px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+      </style>
+        <header>
+           <img src="./image/Imhayun_IMG/Loginmodel.jpg" alt="model">
+        </header>
+</head>
+
+<body>
+   
+    <br>
+    <br>
+    <br>
+        <form class="needs-validation" novalidate>
+            
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">아이디</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">비밀번호</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">자동 로그인</label>
+                </div>
+                <button type="submit" class="btn btn-primary">로그인</button>
+              </form>
+           
+    
+    
+    <br>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+
+</form>
+    <div id="wewe">
+        <a href="http://wewe2020.co.kr/" target="_blank">
+            <img src="./image/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+        </a>
+    </div>
+    <!-- 스크롤 최상위로 -->
+    <div>
+        <a href="#">
+            <input type="image" src="./image/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+        </a>
+    </div>
+
+
+    <footer style="background-color: black;">
+        <img src="./image/bottom/footer_logo.png" alt="logo">
+        <!-- left -->
+        <div>
+            <div class="left">
+                <div>
+                    <p>상호명 : 주식회사 휴브아이웨어</p>
+                    <p>대표 : 황윤기</p>
+                    <p>주소 : 대구광역시 서구 달서천로 399(원대동1가)</p>
+                    <p>사업자 등록번호 : 504-81-97189</p>
+                    <p>대표번호 : 053-383-0402</p>
+
+                    <p>팩스번호 : 053-357-1050</p>
+                    <p>메일 : hube@hubeeyewear.com</p>
+                </div>
+                <p>COPYRIGHT © 2020 PLA_STA. All RIGHTS RESERVED.</p>
+            </div>
+            <!-- right -->
+            <!-- 개인 회사 연결 -->
+            <div class="right">
+                <!-- 회사소개 -->
+                <a href="" class="">회사소개</a>
+                <!-- 개인정보처리방침 -->
+                <a href="">개인정보처리방침</a>
+                <!-- 이용약관 -->
+                <a href="">이용약관</a>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
