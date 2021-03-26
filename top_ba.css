@@ -244,3 +244,9 @@ padding: 0 0;
 #ke_rl{
   display: none;
 }
+#KE_button{
+  display: none;
+}
+*:checked{
+  display: block;
+}
