@@ -1,0 +1,485 @@
+*{padding: 0; margin: 0;
+/* border: 1px dotted red; */
+}
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+p{padding: 0; margin: 0;}
+ul{list-style: none; margin: 0; padding: 0;}
+li{margin: 0; padding: 0;}
+
+.more{color: rgb(201, 198, 198); font-size: 16px;}
+.title h3{font-size: 14px;}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+header>div{
+    width: 50%;
+    object-fit: cover;
+}
+
+header div a div{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header div a div.right{
+    top: 50%;
+    right: 5%;
+}
+header div a div.left{
+    top: 50%;
+    left: 5%;
+}
+header div a p{margin: 0px 20px; font-weight: bold;}
+header a{ color: white; position: relative;}
+header a:hover{ color: white;}
+/* header 속 plastic, metal 글자 */
+header div a div img{width: 30px; height:40px;}
+
+
+/* 상단 고정 */
+
+
+/* 하단 고정 */
+#top_drop{
+    display: inline-block;
+    position: fixed;
+
+    bottom: 1%;
+    right: 10px;
+    width: 50px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+}
+
+
+
+
+/* ----------article----------- */
+article{margin-top: 50px; background-color: #F8F8F8}
+
+/* section */
+section{padding: 30px 0px; font-size: 12px;}
+
+/* section : dragImage */
+section.dragImage{
+    background-color: #c8aa9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+section.dragImage h3{font-size: 15px; margin-top: 25px;}
+section.dragImage a{ margin-bottom: 25px; margin-top: 10px;}
+section.dragImage div img.w-100{height: 400px; object-fit: cover; margin-bottom: 20px;}
+
+
+/* section : ABOUT PLASTA */
+section.about{ padding: 0;margin: 0; color: #c8aa9a; position: relative;}
+#aboutTitle{
+    display: flex; align-items: center; 
+    position: absolute; top: 50px; z-index: 3;
+}
+section div.line{ width: 120px; height: 1px; background-color: #c8aa9a;}
+section div.line.title{ width: 70px;}
+section div#aboutTitle h3{font-size: 15px; margin-left: 10px;}
+section.about div.content{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+#aboutImage{
+    margin-top: 50px;
+    width: 50%;
+    object-fit: scale-down;
+    margin-left: -8%;
+    transform:scale(1.3);
+}
+section.about div.str{
+    height: 620px;
+    width: 50%;
+    background-color: #1d293f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0px;
+    z-index: 2;
+}
+section.about div.str>div{ display: flex; margin: 40px 0 0 0}
+section.about div.str div div.line{margin: 20px 10px 0px 0px; height: 2px; background-color:#E8CEC1;}
+section.about div.str p{font-size: 14px; margin-top: 8px; color: #E8CEC1;}
+section.about div.str h4{color: #E8CEC1;}
+
+/* section : BEST ITEMS */
+/* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
+section.best{ margin-top: 0px; position: relative; height: 600px;}
+section.best h3{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 17px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+section.best .card{
+    height: 250px; padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+section.best .card img{margin-top: 25%;}
+section.best .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 20px;
+}
+
+section.best div.info a{color: black;}
+section.best div.info p{margin-bottom: 10px;}
+
+section.best .wrap {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.best .box_wrap{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section.best .box{ 
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+}
+
+section.best .box:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.best .content {
+    float: left;
+    width: 45%;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+section.best .prev {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(32px, -50%);
+    -ms-transform: translate(32px, -50%);
+    -o-transform: translate(32px, -50%);
+    transform: translate(32px, -50%);
+}
+  
+section.best .next {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(-16px, -50%);
+    -ms-transform: translate(-16px, -50%);
+    -o-transform: translate(-16px, -50%);
+    transform: translate(-16px, -50%);
+}
+
+
+/* section : BrandStory */
+section.brand{
+    margin: 0; padding: 0;
+    overflow: hidden; 
+    position: relative; 
+    color: #c8aa9a;
+}
+section.brand img{
+    width: 200%;
+    height: 350px;
+    margin-left: -50%;
+}
+
+section.brand div{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.brand div p{margin-bottom: 5px; font-size: 14px;}
+section.brand a{
+    border: 1px solid #c8aa9a; 
+    color: #c8aa9a;
+    font-size: 10px;
+    padding: 3px 50px;
+}
+
+
+
+/* section : PLASTIC ITEM */
+section.plastic{padding: 0px; display: inline-block;}
+section.plastic div.person{
+    overflow: hidden;
+    height: 850px;
+    float: left;
+}
+section.plastic .person img{
+    width: 300px;
+    height: 820px;
+    object-fit: cover;
+    margin-left: -10%;
+    margin-top: 60px;
+}
+section.plastic div.title{
+    width: 200px;
+    margin: 75px 0px 30px 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+section.plastic div.title h3{font-size: 15px;}
+section.plastic div.title a{font-size: 11px; margin-top: 10px;}
+section.plastic div.info a{font-size: 13px;}
+section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
+
+section.plastic .item{
+    width: 100%;
+    margin-left: 5%;
+}
+
+section.plastic .item .card{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+section.plastic .item .card img{
+    margin-top: 80px; width: 100%;
+}
+section.plastic .item .info{
+    margin: 15px 0px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.plastic .item .info a{width: auto;}
+
+section.plastic .item li{
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* section : metal */
+section.metal{ 
+    width: 100%;
+    margin-top: 50px; padding:  0px; 
+    display: inline-block;
+}
+section.metal div.person{
+    overflow: hidden;
+    height: 850px;
+    float: right;
+}
+section.metal .person img{
+    width: 200px;
+    height: 820px;
+    object-fit: cover;
+    margin-top: -10px;
+}
+section.metal div.title{
+    width: 200px;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 30px;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+section.metal div.title h3{font-size: 15px;}
+section.metal div.title a{font-size: 11px; margin-top: 10px;}
+section.metal div.info a{font-size: 13px;}
+section.metal div.info p{font-size: 13px; color: black; font-weight: bold;}
+
+section.metal .item{
+    width: 100%;
+    margin-left: 5%;
+}
+
+section.metal .item .card{
+    width: 200px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+section.metal .item .card img{
+    margin-top: 40%; width: 100%;
+}
+section.metal .item .info{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.metal .item .info a{width: auto;}
+
+section.metal .item ul{width: 80%;}
+section.metal .item li{
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* section : bottom */
+section.bottom{padding-bottom: 0; margin-top: 0;}
+section.bottom #b1, #b2{width: 100%;}
+
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    margin: 0;
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+
+/* 팝업 작업 */
+/* aside */
+aside#pop{
+    padding: 10px; margin: 0;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 600px;
+    height: 450px;
+    border-radius: 0px 10px ;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    z-index: 3;
+}
+aside#pop div#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #c8aa9a;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+}
+aside#pop img{
+    width: 15px;
+    margin: 8px;
+}
+
+aside#pop p{
+    margin-left: 35%; 
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+aside#pop iframe{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    opacity: 1;
+    position: relative;
+}
+
+aside#pop a{
+    background-color: #c8aa9a;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-left: 40%;
+}
+
+
+
