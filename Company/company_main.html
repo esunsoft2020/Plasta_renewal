@@ -59,6 +59,10 @@
             #map{
                 width: 100%;
                 height: 600px;
+                border-width: 4px;
+                border: solid;
+                border-color: rgb(177, 233, 221);
+                border-radius: 16px;
             }
         </style>
 
@@ -68,7 +72,7 @@
         </script>
 
         <script>
-            function showMap(){
+            function Map_sj(){
                 var e= document.getElementById('map');
                 new google.maps.Map( e, {center:{lat:37.562161, lng:127.035199},zoom:14} );
                 var sj= new google.maps.LatLng(37.595224, 126.908780);
@@ -91,7 +95,7 @@
 
         <div id="cpmap">
             <div id="cpmap_btnbox">
-                <button class="btn btn-promary" id="cpmap_btn1" onclick="showMap()">석종점</button>
+                <button class="btn btn-promary" id="cpmap_btn1" onclick="Map_sj()">석종점</button>
                 <button  class="btn btn-promary"id="cpmap_btn2">응기점</button>
                 <button class="btn btn-promary" id="cpmap_btn3">은선점</button>
                 <button  class="btn btn-promary"id="cpmap_btn4">재용점</button>
