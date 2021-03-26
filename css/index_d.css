@@ -1,5 +1,5 @@
 *{padding: 0; margin: 0;
-/* border: 1px dotted red; */
+border: 1px dotted red;
 }
 
 a{text-decoration: none; color: gray;}
@@ -25,6 +25,7 @@ header{
 header>div{
     width: 50%;
     object-fit: cover;
+    height: 50vw;
 }
 
 header div a div{
@@ -34,8 +35,9 @@ header div a div{
     align-items: center;
     justify-content: center;
 }
+header div a>img{ height: 100%;}
 
-header div a div.right{
+header #leftImage{
     top: 50%;
     right: 5%;
 }
@@ -46,7 +48,7 @@ header div a div.left{
 header div a p{margin: 0px 20px; font-weight: bold;}
 header a{ color: white; position: relative;}
 header a:hover{ color: white;}
-/* header 속 plastic, metal 글자 */
+/* header 속 plastic, metal */
 header div a div img{width: 30px; height:40px;}
 
 
@@ -163,7 +165,7 @@ section.about div.str h4{color: #E8CEC1;}
 
 /* section : BEST ITEMS */
 /* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
-section.best{ margin-top: 0px; position: relative; height: 600px;}
+section.best{ margin-top: 0px; position: relative; height: 500px;}
 section.best h3{ 
     display: flex; 
     align-items: center; 
@@ -174,10 +176,11 @@ section.best h3{
     margin-top: 50px;
 }
 section.best .card{
-    height: 250px; padding: 0px 10px 0px 10px;
+    width: 200px;
+    height: 230px; padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-section.best .card img{margin-top: 25%;}
+section.best .card img{margin-top: 40%;}
 section.best .info{
     display: flex;
     flex-direction: column;
@@ -188,7 +191,6 @@ section.best .info{
 }
 
 section.best div.info a{color: black;}
-section.best div.info p{margin-bottom: 10px;}
 
 section.best .wrap {
     width: 90%;
@@ -253,18 +255,17 @@ section.brand{
     color: #c8aa9a;
 }
 section.brand img{
-    width: 200%;
-    height: 350px;
-    margin-left: -50%;
+    width: 100%;
+    height: 30vw;
+    margin-left: 0%;
 }
 
 section.brand div{
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 section.brand div p{margin-bottom: 5px; font-size: 14px;}
 section.brand a{
@@ -277,46 +278,53 @@ section.brand a{
 
 
 /* section : PLASTIC ITEM */
-section.plastic{padding: 0px; display: inline-block;}
+section.plastic{margin: 0; width: 100%; padding: 0px; display: inline-block;}
 section.plastic div.person{
     overflow: hidden;
-    height: 850px;
     float: left;
+    padding: 0px;
+    margin: 5% 0 0 0;
+    width: 38%;
+    height: 500px;
 }
 section.plastic .person img{
-    width: 300px;
-    height: 820px;
+    height: 100%;
     object-fit: cover;
-    margin-left: -10%;
-    margin-top: 60px;
+    margin-left: 0%;
 }
 section.plastic div.title{
-    width: 200px;
-    margin: 75px 0px 30px 420px;
+    margin: 75px 0px 30px 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F8F8F8;
 }
-section.plastic div.title h3{font-size: 15px;}
+section.plastic div.title h3{font-weight: bold; font-size: 15px;}
 section.plastic div.title a{font-size: 11px; margin-top: 10px;}
 section.plastic div.info a{font-size: 13px;}
 section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.plastic .item{
-    width: 100%;
-    margin-left: 5%;
+    padding: 0px;
+    width: 50%;
+    float: left;
+    margin: 0px;
+}
+section.plastic .item ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 section.plastic .item .card{
-    width: 200px;
-    height: 250px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
 }
 section.plastic .item .card img{
-    margin-top: 80px; width: 100%;
+    margin: 60% 0px;
 }
 section.plastic .item .info{
     margin: 15px 0px 15px 20px;
@@ -324,79 +332,87 @@ section.plastic .item .info{
     flex-direction: column;
     align-items: center;
 }
-section.plastic .item .info a{width: auto;}
-
+section.plastic .item .info a{width: 150px;font-size: 14px;}
 section.plastic .item li{
     cursor: pointer;
     display: inline-block;
+    width: 30%;
+    margin-right: 10px;
 }
 
 
 /* section : metal */
 section.metal{ 
     width: 100%;
-    margin-top: 50px; padding:  0px; 
+    margin-top: 5%; padding:  0px; 
     display: inline-block;
 }
 section.metal div.person{
     overflow: hidden;
-    height: 850px;
+    height: 500px;
+    width: 350px;
+    margin-top: 38px;
     float: right;
+    margin-right: -15%;
 }
 section.metal .person img{
-    width: 200px;
-    height: 820px;
     object-fit: cover;
-    margin-top: -10px;
+    margin: 0; padding: 0;
 }
 section.metal div.title{
-    width: 200px;
-    margin: 0px 0px 0px 0px;
-    position: absolute;
-    top: 30px;
-    left: 25%;
+    margin: 3% 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F8F8F8;
 }
-section.metal div.title h3{font-size: 15px;}
+section.metal div.title h3{font-weight: bold;font-size: 15px;}
 section.metal div.title a{font-size: 11px; margin-top: 10px;}
 section.metal div.info a{font-size: 13px;}
 section.metal div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.metal .item{
-    width: 100%;
-    margin-left: 5%;
+    float: left;
+    margin: 0;
 }
 
 section.metal .item .card{
-    width: 200px;
-    height: 250px;
-    margin-left: 25px;
-    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 50%;
 }
-section.metal .item .card img{
-    margin-top: 40%; width: 100%;
-}
+section.metal .item .card img{margin: 40% 0px;}
+section.metal .item .info a{width: auto; font-size: 12px;}
 section.metal .item .info{
-    margin: 15px 0px;
+    margin: 15px 0px 15px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-section.metal .item .info a{width: auto;}
 
-section.metal .item ul{width: 80%;}
+
+section.metal .item ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
 section.metal .item li{
     cursor: pointer;
     display: inline-block;
+    width: 30%;
+    margin-right: 10px;
 }
 
 /* section : bottom */
-section.bottom{padding-bottom: 0; margin-top: 0;}
-section.bottom #b1, #b2{width: 100%;}
+section.bottom{padding: 0; margin: 0;overflow: hidden;}
+section.bottom #b1, #b2{
+    padding: -10px; margin: -10px;
+    width: 51%; display: inline-block;
+}
 
 /* footer a{text-decoration: none;} 기본적으로 필요 */
 footer{ 
