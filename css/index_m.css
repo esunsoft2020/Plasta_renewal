@@ -159,8 +159,9 @@ section.best h3{
 section.best .card{
     height: 240px; padding: 0px 10px 0px 10px;
     cursor: pointer;
+    width: 150px;
 }
-section.best .card img{margin-top: 50%;}
+section.best .card img{width: 100%; margin-top: 80px;}
 section.best .info{
     display: flex;
     flex-direction: column;
@@ -171,11 +172,12 @@ section.best .info{
 }
 
 section.best .wrap {
-    width: 500px;
+    width: 300px;
     height: 300px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
 }
 
 section.best .box_wrap{
@@ -261,7 +263,7 @@ section.brand a{
 section.plastic{padding: 0px;}
 section.plastic div.person{
     overflow: hidden;
-    height: 300px;
+    height: 200px;
 }
 section.plastic .person img{
     width: 100%;
@@ -279,19 +281,17 @@ section.plastic div.title{
 
 section.plastic .item{
     width: 100%;
-    margin-left: 5%;
+    text-align: center;
 }
 
 section.plastic .item .card{
-    width: 190px;
-    height: 300px;
-    margin-left: 20px;
+    width: 150px;
+    height: 200px;
 }
 section.plastic .item .card img{
-    margin-top: 100px; width: 100%;
+    margin-top: 70px; width: 100%;
 }
 section.plastic .item .info{
-    margin: 15px 0px 15px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,6 +301,7 @@ section.plastic .item .info a{width: auto;}
 section.plastic .item li{
     cursor: pointer;
     display: inline-block;
+    margin-right: 10px;
 }
 
 
@@ -324,30 +325,29 @@ section.metal div.title{
     background-color: #F8F8F8;
     position: absolute;
     top: 280px;
-    left: 40%;
+    width: 100%;
+    text-align: center;
 }
 
 section.metal .item{
     margin-top: 10px;
     width: 100%;
-    margin-left: 1%;
+    text-align: center;
 }
 
 section.metal .item .card{
-    width: 190px;
-    height: 300px;
-    margin-left: 20px;
+    width: 150px;
+    height: 200px;
 }
 section.metal .item .card img{
-    margin-top: 100px; width: 100%;
+    margin-top: 70px; width: 100%;
 }
 section.metal .item .info{
-    margin: 15px 0px 15px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section.metal .item .info a{width: auto;}
+section.plastic .item .info a{width: auto;}
 section.metal .item ul{
     position: absolute;
     margin-top: 80px;
@@ -355,10 +355,11 @@ section.metal .item ul{
 section.metal .item li{
     cursor: pointer;
     display: inline-block;
+    margin-right: 10px;
 }
 
 /* section : bottom */
-section.bottom{margin-top: 800px; padding-bottom: 0;}
+section.bottom{margin-top: 570px; padding-bottom: 0;}
 section.bottom #b1, #b2{width: 100%;}
 
 /* footer a{text-decoration: none;} 기본적으로 필요 */
@@ -399,7 +400,7 @@ aside#pop{
     top: 10%;
     left: 5%;
     background-color: rgb(255, 255, 255, 0.8);
-    width: 450px;
+    width: 300px;
     height: 350px;
     border-radius: 0px 10px ;
     display: flex;
@@ -421,9 +422,9 @@ aside#pop img{
 }
 
 aside#pop p{
-    margin-left: 35%; 
-    margin-bottom: 20px;
+    margin-left: 25%; 
     font-size: 14px;
+    margin-top: 10px;
 }
 
 aside#pop iframe{
@@ -440,7 +441,8 @@ aside#pop a{
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 11px;
-    margin-left: 40%;
+    margin-left: 30%;
+    margin-bottom: 10px;
 }
 
 
