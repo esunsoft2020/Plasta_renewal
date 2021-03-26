@@ -55,9 +55,8 @@ header {
   }
   .smenu:checked{
     display: block;
-  }
-  
-  ul {display: block;
+  }  
+    ul {display: block;
     list-style-type: disc;
     
   }
