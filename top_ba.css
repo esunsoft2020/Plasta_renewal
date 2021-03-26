@@ -117,7 +117,7 @@ header {
 
 button {
   appearance: auto;
-  -webkit-writing-mode: horizontal-tb !important;
+  /* -webkit-writing-mode: horizontal-tb !important; */
   text-rendering: auto;
   color: -internal-light-dark(black, white);
   letter-spacing: normal;
