@@ -74,13 +74,14 @@ li{
 }
 @media (max-width: 680px){li{font-size: 1em;}}
 
-#cpmap_btnbox{display: flex; width: auto;}
-#cpmap_btnbox button{border-color: rgb(48, 168, 156); 
-    border-style:double;
+#cpmap_btnbox{display: flex; width: auto; margin-top: 60px;}
+#cpmap_btnbox button{border-color: rgb(177, 233, 221); 
+    border-style: solid;
     border-radius: 8px; 
     background-color:rgb(255, 255, 255);
     color: rgb(49, 179, 166);
     width: 100px;
+    border-width: 2px;
     padding: 5px;
     margin: 10px;
     text-align: center;
@@ -89,8 +90,19 @@ li{
     font-family:fantasy;
     font-size: 16px;}
 
-/* 맵화면 */
-#cpmap_view {width: 100%;height: 800px;}
+    #map{
+        width: 100%;
+        height: 600px;
+        border-width: 4px;
+        border: solid;
+        border-color: rgb(177, 233, 221);
+        border-radius: 16px;
+        margin-bottom: 60px;
+        background-image: url(../Image/img_jong/s_visual07.jpg); 
+        background-position: center;
+        opacity: 0.3;
+    }
+    #map h3{text-align: center; margin-left: auto; margin-right: auto;}
 
 
 
