@@ -17,7 +17,9 @@ header{
     flex-direction: column;
     overflow: hidden;
 }
-header img{height: 460px; object-fit: cover;}
+header img{
+    width: 100%;
+    height: 460px; object-fit: cover;}
 
 header div a div{ 
     position: absolute;
@@ -153,13 +155,13 @@ section.best h3{
     align-items: center; 
     justify-content: center;
     font-size: 17px;
-    margin-bottom: 20px;
 }
 section.best .card{
-    height: 380px; padding: 0px 10px 0px 10px;
+    height: 400px; padding: 0px 10px 0px 10px;
     cursor: pointer;
+    width: 300px;
 }
-section.best .card img{margin-top: 50%;}
+section.best .card img{width: 100%; margin-top: 50%;}
 section.best .info{
     display: flex;
     flex-direction: column;
@@ -174,6 +176,7 @@ section.best div.info p{margin-bottom: 10px;}
 
 section.best .wrap {
     width: 90%;
+    height: 600px;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -181,6 +184,7 @@ section.best .wrap {
 
 section.best .box_wrap{
     width: 90%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -199,8 +203,7 @@ section.best .box:after{
 
 section.best .content {
     float: left;
-    width: 45%;
-    height: auto;
+    width: 300px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -209,10 +212,10 @@ section.best .prev {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translate(32px, -50%);
-    -ms-transform: translate(32px, -50%);
-    -o-transform: translate(32px, -50%);
-    transform: translate(32px, -50%);
+    -webkit-transform: translate(16px, -50%);
+    -ms-transform: translate(16px, -50%);
+    -o-transform: translate(16px, -50%);
+    transform: translate(16px, -50%);
 }
   
 section.best .next {
@@ -220,10 +223,10 @@ section.best .next {
     position: absolute;
     top: 50%;
     right: 0;
-    -webkit-transform: translate(-16px, -50%);
-    -ms-transform: translate(-16px, -50%);
-    -o-transform: translate(-16px, -50%);
-    transform: translate(-16px, -50%);
+    -webkit-transform: translate(-8px, -50%);
+    -ms-transform: translate(-8px, -50%);
+    -o-transform: translate(-8px, -50%);
+    transform: translate(-8px, -50%);
 }
 
 
@@ -259,22 +262,22 @@ section.brand a{
 
 
 /* section : PLASTIC ITEM */
-section.plastic{padding: 0px; display: inline-block;}
+section.plastic{width: 90%; padding: 0px; display: inline-block;}
 section.plastic div.person{
     overflow: hidden;
-    height: 850px;
+    height: 130vw;
     float: left;
 }
 section.plastic .person img{
-    width: 300px;
-    height: 820px;
+    width: 30vw;
+    height: 100%;
     object-fit: cover;
-    margin-left: -10%;
     margin-top: 60px;
+    margin-right: 5vw;
 }
 section.plastic div.title{
     width: 200px;
-    margin: 75px 0px 30px 420px;
+    margin: 75px 0px 30px 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,22 +289,19 @@ section.plastic div.title a{font-size: 11px; margin-top: 10px;}
 section.plastic div.info a{font-size: 13px;}
 section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
 
-section.plastic .item{
-    width: 100%;
-    margin-left: 5%;
+section.plastic .item {
+    width: 95vw;margin: 0; padding: 0;
 }
-
 section.plastic .item .card{
-    width: 200px;
-    height: 250px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 25vw;
+    height: 40vw;
+    margin: 10px 0 0 0;
 }
 section.plastic .item .card img{
-    margin-top: 80px; width: 100%;
+    margin: 60% 0 0; width: 100%;
 }
 section.plastic .item .info{
-    margin: 15px 0px 15px 20px;
+    margin: 2vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,32 +311,35 @@ section.plastic .item .info a{width: auto;}
 section.plastic .item li{
     cursor: pointer;
     display: inline-block;
+    margin: 0 2vw;
 }
 
 
 /* section : metal */
-section.metal{ 
+section.metal{
+    position: relative;
     width: 100%;
-    margin-top: 50px; padding:  0px; 
+    margin: 50px 0 0 0; padding:  0px; 
     display: inline-block;
 }
 section.metal div.person{
+    width: 25vw;
     overflow: hidden;
-    height: 850px;
     float: right;
+    margin: 0;
+    padding: 0;
 }
 section.metal .person img{
-    width: 200px;
-    height: 820px;
+    width: 100%;
+    height: 120vw;
     object-fit: cover;
-    margin-top: -10px;
+    margin: 0;
+    padding: 0;
 }
 section.metal div.title{
-    width: 200px;
-    margin: 0px 0px 0px 0px;
+    width: 65vw;
+    margin:8vw 0px;
     position: absolute;
-    top: 30px;
-    left: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,31 +352,32 @@ section.metal div.info a{font-size: 13px;}
 section.metal div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.metal .item{
-    width: 100%;
-    margin-left: 5%;
+    position: relative;
+    float: left;width: 68vw; margin: 20vw 0 0 0;padding: 0;
 }
 
 section.metal .item .card{
-    width: 200px;
-    height: 250px;
-    margin-left: 25px;
-    margin-top: 10px;
+    width: 25vw;
+    height: 40vw;
+    margin: 10px 0 0 0;
 }
 section.metal .item .card img{
-    margin-top: 40%; width: 100%;
+    margin-top: 60%; width: 100%;
 }
 section.metal .item .info{
-    margin: 15px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
-section.metal .item .info a{width: auto;}
+section.metal .item .info a{width: auto; padding: 0; margin: 0;}
 
-section.metal .item ul{width: 80%;}
+section.metal .item ul{width: 100%;padding:0 0 0 4vw; margin: 0;}
 section.metal .item li{
+    padding:0; margin: 0;
     cursor: pointer;
     display: inline-block;
+    margin: 0 2vw;
 }
 
 /* section : bottom */
@@ -418,8 +422,8 @@ aside#pop{
     top: 10%;
     left: 5%;
     background-color: rgb(255, 255, 255, 0.8);
-    width: 600px;
-    height: 450px;
+    width: 80vw;
+    height: 70vw;
     border-radius: 0px 10px ;
     display: flex;
     flex-direction: column;

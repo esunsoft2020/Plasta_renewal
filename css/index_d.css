@@ -165,29 +165,28 @@ section.about div.str h4{color: #E8CEC1;}
 
 /* section : BEST ITEMS */
 /* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
-section.best{ margin-top: 0px; position: relative; height: 500px;}
+section.best{ margin-top: 2vw; position: relative; height: 44vw;}
 section.best h3{ 
     display: flex; 
     align-items: center; 
     justify-content: center;
     font-size: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 4vw;
 }
 section.best .card{
-    width: 200px;
-    height: 230px; padding: 0px 10px 0px 10px;
+    width: 19vw;
+    height: 25vw; padding: 0px 10px 0px 10px;
     cursor: pointer;
 }
-section.best .card img{margin-top: 40%;}
 section.best .info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    height: 20px;
+    margin-top: 20px;
+    height: 2vw;
 }
 
 section.best div.info a{color: black;}
@@ -218,11 +217,10 @@ section.best .box:after{
 }
 
 section.best .content {
-    float: left;
     width: 45%;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 section.best .prev {
     width: 50px;
@@ -262,53 +260,58 @@ section.brand img{
 
 section.brand div{
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 40%;
+    left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-section.brand div p{margin-bottom: 5px; font-size: 14px;}
+section.brand div p{margin-bottom: 5px; font-size: 0.8vw;}
 section.brand a{
     border: 1px solid #c8aa9a; 
     color: #c8aa9a;
-    font-size: 10px;
+    font-size: 0.5vw;
     padding: 3px 50px;
 }
 
 
 
 /* section : PLASTIC ITEM */
-section.plastic{margin: 0; width: 100%; padding: 0px; display: inline-block;}
+section.plastic{
+    margin: 7.5vw 0 0 0; width: 100%; 
+    padding: 0px; display: inline-block;
+}
 section.plastic div.person{
     overflow: hidden;
     float: left;
     padding: 0px;
-    margin: 5% 0 0 0;
-    width: 38%;
-    height: 500px;
+    width: 26vw;
+    height: 40vw;
 }
 section.plastic .person img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-left: 0%;
+    margin: 0;
 }
 section.plastic div.title{
-    margin: 75px 0px 30px 50%;
+    margin: 4vw 0px 2vw 56.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-section.plastic div.title h3{font-weight: bold; font-size: 15px;}
-section.plastic div.title a{font-size: 11px; margin-top: 10px;}
+section.plastic div.title h3{font-size: 1vw;}
+section.plastic div.title a{font-weight: bold;font-size: 11px; margin-top: 10px;}
 section.plastic div.info a{font-size: 13px;}
 section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.plastic .item{
     padding: 0px;
-    width: 50%;
+    width: 65vw;
     float: left;
-    margin: 0px;
+    margin: 0 0 0 3vw;
 }
 section.plastic .item ul{
     display: flex;
@@ -324,15 +327,20 @@ section.plastic .item .card{
     margin-top: 10%;
 }
 section.plastic .item .card img{
-    margin: 60% 0px;
+    margin: 45% 0px;
+    padding: 0;
 }
 section.plastic .item .info{
-    margin: 15px 0px 15px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-section.plastic .item .info a{width: 150px;font-size: 14px;}
+section.plastic .item .info a{
+    margin: 0;
+    width: 100%;font-size: 0.9vw;
+}
+section.plastic .item .info p{font-size: 0.85vw;}
 section.plastic .item li{
     cursor: pointer;
     display: inline-block;
@@ -342,19 +350,78 @@ section.plastic .item li{
 
 
 /* section : metal */
-section.metal{height: 600px; width: 100%;}
-section.metal div.title h3{font-weight: bold; font-size: 15px;}
-section.metal div.title a{font-size: 11px; margin-top: 10px;}
+section.metal{
+    margin: 7.5vw 0 0 0; width: 100%; 
+    padding: 0px; display: inline-block;
+}
+section.metal div.person{
+    overflow: hidden;
+    float: right;
+    padding: 0px;
+    width: 26vw;
+    height: 38vw;
+}
+section.metal .person img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+section.metal div.title{
+    position: absolute;
+    top: -6vw;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.metal div.title h3{font-size: 1vw;}
+section.metal div.title a{font-weight: bold;font-size: 11px; margin-top: 10px;}
 section.metal div.info a{font-size: 13px;}
 section.metal div.info p{font-size: 13px; color: black; font-weight: bold;}
 
-section.metal div.item ul{margin-left: -10px; display: flex; justify-content: center;padding-right: 10%;}
-section.metal div.item li{width: 80%; margin-left: 5%;}
-section.metal div.item .card{margin: 15% 0 0 0%; }
-section.metal div.item .card img{width: 100%;}
-section.metal div.person{margin-top: 5%;width: 20%;}
-section.metal div.person img{width: 100%; height: 400px;}
-section.metal div.item div.info {width: 80%;}
+section.metal .item{
+    position: relative;
+    padding: 0px;
+    width: 70vw;
+    margin: 0;
+}
+section.metal .item ul{
+    display: flex;
+    padding: 0;
+    margin: 7vw 0 0 0 ;
+    align-items: center;
+    justify-content: center;
+}
+
+section.metal .item .card{
+    width: 100%;
+    height: 100%;
+    margin: 10% 0 0 0;
+}
+section.metal .item .card img{
+    margin: 45% 0px;
+    padding: 0;
+}
+section.metal .item .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.metal .item .info a{
+    margin: 0;
+    width: auto;font-size: 0.9vw;
+}
+section.metal .item .info p{font-size: 0.85vw;}
+section.metal .item li{
+    cursor: pointer;
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+}
+
 
 
 /* section : bottom */
@@ -406,7 +473,7 @@ aside#pop{
     left: 5%;
     background-color: rgb(255, 255, 255, 0.8);
     width: 600px;
-    height: 450px;
+    height: 500px;
     border-radius: 0px 10px ;
     display: flex;
     flex-direction: column;

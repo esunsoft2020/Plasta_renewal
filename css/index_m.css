@@ -144,36 +144,31 @@ section.about div.str div div.line{margin: 20px 10px 0px 0px; height: 2px;}
 
 /* section : BEST ITEMS */
 /* http://hong.adfeel.info/frontend/%EA%B0%84%EB%8B%A8%ED%95%9C-carousel-%EC%98%88%EC%A0%9C/  참고 */
-section.best{ margin-top: 0px; position: relative;}
+section.best{ margin-top: 0px; position: relative; height: 88vw;}
 section.best h3{ 
     display: flex; 
     align-items: center; 
     justify-content: center;
     font-size: 14px;
 }
-/* section.best>div>div{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-} */
 section.best .card{
-    height: 240px; padding: 0px 10px 0px 10px;
+    height: 55vw; padding: 0;
     cursor: pointer;
-    width: 150px;
+    width: 40vw;
 }
-section.best .card img{width: 100%; margin-top: 80px;}
+section.best .card img{width: 100%; margin-top: 18vw;}
 section.best .info{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    height: 20px;
+    margin-top: 5vw;
+    height: 10vw;
 }
 
 section.best .wrap {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -181,13 +176,15 @@ section.best .wrap {
 }
 
 section.best .box_wrap{
-    width: 400px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 section.best .box{ 
     width: 100%;
+    height: 100%;
     margin-top: 15px;
     display: flex;
 }
@@ -198,18 +195,17 @@ section.best .box:after{
     clear: both;
 }
 
-section.best .content {
+section.best div.content {
     float: left;
-    width: 45%;
-    height: 280px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+    margin-right: 3vw;
 }
 section.best .prev {
     width: 20px;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -20px;
     -webkit-transform: translate(32px, -50%);
     -ms-transform: translate(32px, -50%);
     -o-transform: translate(32px, -50%);
@@ -220,7 +216,7 @@ section.best .next {
     width: 20px;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -13px;
     -webkit-transform: translate(-16px, -50%);
     -ms-transform: translate(-16px, -50%);
     -o-transform: translate(-16px, -50%);
@@ -244,16 +240,17 @@ section.brand img{
 section.brand div{
     position: absolute;
     top: 50%;
-    left: 20%;
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+section.boand p{font-size: 1vw;}
 section.brand a{
     border: 1px solid #c8aa9a; 
     color: #c8aa9a;
-    font-size: 10px;
+    font-size: 1vw;
     padding: 1px 40px;
 }
 
@@ -349,7 +346,6 @@ section.metal .item .info{
 }
 section.plastic .item .info a{width: auto;}
 section.metal .item ul{
-    position: absolute;
     margin-top: 80px;
 }
 section.metal .item li{
@@ -359,7 +355,8 @@ section.metal .item li{
 }
 
 /* section : bottom */
-section.bottom{margin-top: 570px; padding-bottom: 0;}
+section.bottom{
+    position: static;clear: both;margin-top: 5vw; padding-bottom: 0;}
 section.bottom #b1, #b2{width: 100%;}
 
 /* footer a{text-decoration: none;} 기본적으로 필요 */
