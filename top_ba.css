@@ -1,4 +1,21 @@
+@media (max-width: 568px){
+  body {
+    font-size: 11px;
+  }
+}
+@media (max-width: 976px){
+  body {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1280px){
+  body {
+    font-size: 14px;
+  }
+}
+
 header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,12 +56,12 @@ body, html {
 }
 #top{
   display: block;
-  width: 320px;
+  width: 360px;
   height: 100%;
   background: rgb(255, 255, 255);
   position: fixed;
   top: 0;
-  right: -320px;
+  right: -360px;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.4s ease;
@@ -209,9 +226,10 @@ margin-left: 16px;
 }
 .top_aa{
 border: 1px solid #ddd;
-width: 320px;
+width: 360px;
 height: 50px;
 margin-left: -33px;
+padding-left: 0px;
 
 
 }
@@ -245,7 +263,7 @@ padding: 0 0;
   display: none;
 }
 #KE_button{
-  display: none;
+  display: block;
 }
 *:checked{
   display: block;
