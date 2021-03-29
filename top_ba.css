@@ -61,7 +61,7 @@ body, html {
   background: rgb(255, 255, 255);
   position: fixed;
   top: 0;
-  right: -360px;
+  right: -100%;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.4s ease;
@@ -184,7 +184,7 @@ text-decoration: none;
 color:white;
 background-color: black;
 text-align: center;
-font-size: 18px;
+
 }
 .btn02{
 
@@ -207,7 +207,7 @@ text-decoration: none;
 color:white;
 background-color: black;
 text-align: center;
-font-size: 18px;
+
 }
 a{text-decoration: none;
 color: #4b4a4a;
@@ -236,6 +236,7 @@ padding-left: 0px;
 .title{
 text-align: left;
 display: block;
+width: 200%;
 height: 49px;
 margin-top:16px ;
 margin-left: 20px;
@@ -243,6 +244,7 @@ margin-left: 20px;
 }
 .top_aa{
 padding: 0 0;
+width: 200%;
 
 }
 #a1{
@@ -250,7 +252,7 @@ padding: 0 0;
 }
 .smenu>li{
   border: 1px solid #ddd;
-  width: 320px;
+  width: 200%;
   height: 36px;
   background-color: rgb(221, 219, 219);
 
@@ -261,10 +263,41 @@ padding: 0 0;
 }
 #ke_rl{
   display: none;
+  width: 200%;
 }
 #KE_button{
   display: block;
+  width: 200%;
 }
 *:checked{
   display: block;
 }
+
+#ke_rl {
+  width: 200%;
+}
+
+@media (min-width: 320px) {
+  #top{width: 100%;}
+  .top_aa{width: 200%;}
+  #ke_img{width: 90px; margin-right: 10px;}
+  .btn01{width: 10px;}
+  .btn02{width: 10px;}
+  #ke_imgnume{width: 100%;}
+  .ke_top_img{width: 7%;}
+  header nav span{margin-left: 7px;}
+
+  
+}
+@media (min-width: 900px) {
+  #top{width: 360px;}
+  .top_aa{width: 200%;}
+  #ke_img{width: 120px;
+    transition: all 0.4s ease;}
+  .btn01{width: 70px;}
+  .btn02{width: 70px;}
+ #ke_imgnume{width: 100%;}
+  
+}
+
+

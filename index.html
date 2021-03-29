@@ -12,15 +12,18 @@
    <link rel="stylesheet" href="./top_ba.css">
    <script>
        function topba(){
-           var e=document.getElementById('top').style.right='0';
+           var e=document.getElementById('top').style.right='0px';
            
            
        }
        function topbax(){
-           var e=document.getElementById('top').style.right='-360px';
+           var e=document.getElementById('top').style.right="-100%";
+           
+               
+           }
            
            
-       }
+       
        let dropdown=false;
        function ke_topba(){
            if(!dropdown){
@@ -76,18 +79,18 @@ footer div div.right{
    </style>
 </head>
 <body>
-    <header class="aaa">
-        <h1><a href="#"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" ></a></h1>
+    <header >
+        <h1><a href="#"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
         <nav>
             <span><a href="#" class="btn01" >KOR</a></span>
             <span><a href="#" class="btn02">ENG</a></span>
-            <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" ></a></span>
-            <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" ></a></span>
-            <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png"></button></span>
+            <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+            <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+            <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width: 100%;"></button></span>
         </nav>
       </header>
-    <div class="d1">
-         <img src="http://plasta.whost.co.kr/images/sub/s_visual01.jpg" >
+    <div >
+         <img src="http://plasta.whost.co.kr/images/sub/s_visual01.jpg" id="ke_imgnume" >
 
     </div>
     <div id="top">
@@ -117,7 +120,7 @@ footer div div.right{
                 </li>
             </ul>
         </div>
-        <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 100%;">
+        <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 200%;">
             <li class="top_aa">
                 <div >
                     <span><a href="#" class="title" target="_self">Brand Story</a></span>
@@ -128,7 +131,7 @@ footer div div.right{
                     <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
                 </div>
                 <!--  id="ke_btn01" class="title"  Collection-->
-                <ul id="ke_rl" class="smenu" style=" margin-left: -33px; margin-top: -18px;" >
+                <ul id="ke_rl" class="smenu" style=" margin-left: -33px; margin-top: -18px; width: 200%;" >
                     <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
                     <li> <a href="#" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
                     <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
