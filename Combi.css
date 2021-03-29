@@ -1,6 +1,10 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none;}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 body {
     font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
@@ -12,6 +16,7 @@ body {
     margin: 0px;
     letter-spacing: -.04em;
     word-break: keep-all;
+    /* border: 1px dotted red; */
 }
 
 #logo{
@@ -33,8 +38,7 @@ body {
 
 #contents{
     margin: auto;
-    width: 620px;
-    height: 735px;
+    width: 1600px;
     padding: 30px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -61,60 +65,86 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #contents{
+        margin: auto;
+        width: 100%;
+        padding: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
 }
+@media (max-width: 975px){
 
-
-#visible_text{
-    position: absolute;
-    width: 50%;
-    z-index: 1;
-    color: white;
-    line-height: 1.6em;
-    text-align: center;
-    padding-top: 400px;
 }
-
-#fregister_term{
-    border: 1px solid #e6e6e6;
-    width: 620px;
-    padding: 0px 15px;
-    height: auto;
-    line-height: 40px;
-}
-
-#cb1{
- display: inline;
- float: right;
-}
-
-#fregister_term h2{
-    display: inline;
-    text-align: left;
-    width: 618px;
-    height: 41px;
-}
-textarea{
-    display: block;
-    width: 100%;
-    height: 150px;
-    text-align: left;
-    border: 1px solid #e6e6e6;
-    padding:  15px;
-    margin-bottom: 20px;
-}
-.fregister_agree{
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 10px;
-    line-height: 40px;
-    font-size: 0.92em;
-}
-
-#chkall{
-    width: 640px;
+/* 품목별 선택지 */
+#select_collection{
     text-align: right;
-    padding-bottom: 5px;
+    margin: 0px 50px 50px 0px;
+    color: #686868;
+}
+
+/* 상품품목 사이즈 변환 */
+#size_change{
+    text-align: center;
+}
+#size_change button{
+    background-size: cover;
+    border: 0px;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#size_change button:hover{
+    opacity: 1;
+}
+/* 안에들어가는 컨텐츠 */
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /*배치의 수평배치*/
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+li{
+    
+    width: auto;
+    color: #686868;
+    text-decoration: none;
+    margin: 0px 7px;
+    text-align: center;
+}
+h4{
+    margin: 15px 7px 5px 7px;
+    font-weight: bold;
+    color: #000;
+}
+li img{
+    
+    border:1px solid #e0e0e0;
+}
+
+
+
+#view_more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: white;
+    border: 3px double #e9e9e9;
+    width: 205px;
+    padding: 8px 0px;
+    color: #797979;
+    margin-top: 30px;
+    margin: auto;
+}
+
+#page2{
+    display: none;
 }
 
 footer{ 
@@ -139,11 +169,7 @@ footer div div.right{
     right: 20px;
     top: 30px;
 }
-/* img{
-    border: 0;
-    font-size: 0;
-    vertical-align: top;
-} */
+
 #top_drop{
     display: inline-block;
     position: fixed;
@@ -207,50 +233,4 @@ html {
     height: 41px;
     margin: 0px 15px;
 }
-#cb2{
-    display: inline;
-    float: right;
-    margin: 0px 15px;
-   }
-#fregister_term2_title{
-    width: 100%;
-    border: 1px solid #e6e6e6;
-}
-table{
-    text-align: center;
-    width: 100%;
-    padding: 15px;
-}
-#table{
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    align-content: center;
-}
-table th{
-    border: 1px solid #ccc;
-    background-color: #e0e0e0;
-    height: 40px;
-    width: 33%;
-}
-table td{
-    border: 1px solid #e0e0e0;
-    color: #787878;
-    height: 60px;
-    width: 33%;
-}
-#btn input{
-    display: flex;
-    background-color: #3d3e3e;
-    width: 250px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    border: 0;
-    outline: 0;
-    opacity: 0.8;
-}
-#btn input:hover{
-    opacity: 1;
-}
+

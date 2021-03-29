@@ -7,6 +7,7 @@
     <title>회원가입약관|Pla_sta</title>
     <link rel="stylesheet" href="./Sign_Up.css" media="(min-width:600px)">
     <link rel="stylesheet" href="./Singn_Up_M.css" media="(max-width:600px)">
+    
 </head>
 <body>
     <div id="page">
@@ -34,14 +35,14 @@
     <div id="contents">
         <form name="fregister" id="fregister" autocomplete="off" onsubmit="return fregister_submit(this); " autocomplete="off">
             <div id="chkall">
-                <input type="checkbox" name="chkall" id="chkall_box">
+                <input type="checkbox" name="chk" id="chkall_box" onclick="checkAll(this)">
                 <label for="chkall_box"><strong>전체동의</strong> </label> 
             </div>
             <div>
                 <div id="fregister_term" >
                     <h2><strong>회원가입약관</strong></h2>
                     <div id="cb1" >
-                        <input type="checkbox" name="cb1" value="1" id="chk1_box">
+                        <input type="checkbox" name="chk" id="chk1_box">
                         <label for="chk1_box">회원가입약관의 내용에 동의합니다.</label>
                     </div>          
                 </div>
@@ -54,7 +55,7 @@
                 <div id="fregister_term2_title">
                     <h2><strong>개인정보처리방침안내</strong></h2>
                     <div id="cb2" >
-                        <input type="checkbox" name="cb2" value="1" id="chk2_box">
+                        <input type="checkbox" name="chk" id="chk2_box">
                         <label for="chk2_box">개인정보처리방침안내의 내용에 동의합니다.</label>
                     </div>
                 </div>
@@ -86,12 +87,12 @@
             </section>
         </form>
         <div id="btn">
-            <input type="submit" value="회원가입">
+            <input type="submit" value="회원가입" onclick="success()">
         </div>
             <!-- wewe홈페이지 이동 -->
             <div id="wewe">
                 <a href="http://wewe2020.co.kr" target="_blank">
-                    <img src="./image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+                    <img src="./image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;"><strong>위위 바로가기</strong></span>
                 </a>
             </div>
             <!-- 스크롤 최상위로 -->
@@ -134,6 +135,7 @@
 
         </div>
     </footer>
+    <script type="text/javascript" src="Sign_Up.js"></script> 
     
 </body>
 </html>
