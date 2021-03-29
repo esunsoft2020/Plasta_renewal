@@ -269,6 +269,7 @@
   .header  #ke_rl {
     width: 200%;
   }
+  .header .ke_top_img{width: 25px}
   
   @media (min-width: 320px) {
     #top{width: 100%;}
@@ -278,8 +279,9 @@
     .btn02{width: 10px;}
     #ke_imgnume{width: 100%;}
     .top_img{width: 7%;}
-    header nav span{margin-left: 7px;}
-  
+    .header nav span{margin-left: 7px;}
+    .header .ke_top_img{width: 18px}
+    .btn-lind{margin: 0;padding: 0;width: 40px; }
     
   }
   @media (min-width: 900px) {
@@ -290,5 +292,4 @@
     .btn01{width: 70px;}
     .btn02{width: 70px;}
    #ke_imgnume{width: 100%;}
-    
   }
