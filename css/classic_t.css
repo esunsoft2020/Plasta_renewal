@@ -17,25 +17,26 @@ header img{
 header div.title{
     width: 100%;
     display: flex; align-items: center; justify-content: center;
-    position: absolute; top: 28vw; left: 2vw;
+    position: absolute; top: 28vw; left: 1vw;
 }
 
 header div.title h3{color: white; font-weight: bold;}
 
 /* article */
 /* section : menu */
-section#menu { margin-top: 5vw; text-align: center;}
+section#menu { margin-top: 5vw; text-align: right;}
 section#menu a{
-    display: inline-block; margin: 1vw 8vw;
-    font-size: 2vw;
+    display: inline; margin: 1vw 1vw;
+    font-size: 1.5vw;
 }
 
 /* section : layout */
 section#layout {text-align: center; margin: 5vw 0;}
 section#layout img{
-    width: 5vw;margin: 0 .5vw;
+    width: 3vw; margin: 0 .5vw;
     cursor: pointer;
 }
+
 /* section : item */
 section.item{text-align: center;}
 section.item .wrap{
@@ -45,7 +46,7 @@ section.item .wrap{
 section.item .card{position: relative;}
 section.item .card>a img{width: 100%;}
 section.item .card .icon{
-    position: absolute; width: 7vw;
+    position: absolute; width: 6vw;
     right: 1vw; bottom: 1vw;
 }
 section.item .card .icon a img{width: 100%; padding: 2vw ; z-index: 1;cursor: pointer;}
@@ -54,19 +55,20 @@ section.item .card .icon a img:hover{
 }
 section.item .info{margin: 2vw 0 0 0;}
 section.item .info a{
-    font-weight: bold; font-size: 2.3vw; color: black;
+    font-weight: bold; font-size: 2vw; color: black;
 }
-section.item .info p{font-size: 2.4vw;}
+section.item .info p{font-size: 2vw;}
 
 /* section : item2 */
 section.item2{display: none;}
+
 
 /* section : more */
 section#more{
     text-align: center; margin: 7vw 0;padding: 0.5vw; cursor: pointer;
 }
 section#more a{
-    padding: 1vw 14vw;
+    padding: 0.2vw 10vw;
     font-size: 2vw;
     border: 3px solid rgb(180, 178, 178);
     border-style: double;
@@ -127,18 +129,6 @@ html {
     vertical-align:middle;
     padding-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-    
-
-
 
 
 footer{ 

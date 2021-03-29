@@ -304,7 +304,7 @@ section.plastic div.title{
 }
 section.plastic div.title h3{font-size: 1vw;}
 section.plastic div.title a{font-weight: bold;font-size: 11px; margin-top: 10px;}
-section.plastic div.info a{font-size: 13px;}
+section.plastic div.info a{font-size: 13px; text-align: center;}
 section.plastic div.info p{font-size: 13px; color: black; font-weight: bold;}
 
 section.plastic .item{

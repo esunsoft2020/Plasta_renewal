@@ -110,6 +110,7 @@ aside#pop{
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    z-index: 3;
 }
 aside#pop div#close{
     position: absolute;

@@ -12,17 +12,19 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
+    <script src="./js/classic.js"></script>
+
      <!--  320px 이상 : smart phone-potrait 모드  -->
     <link rel="stylesheet" href="./css/classic_m.css" media="(max-width: 600px)">
 
     <!--  600px 이상 : smart phone-landscape or tablet  -->
-    <link rel="stylesheet" href="" media="(min-width:600px)">
+    <link rel="stylesheet" href="./css/classic_t.css" media="(min-width:600px)">
 
     <!--  800px 이상 : desktop monitor -->
-    <link rel="stylesheet" href="" media="(min-width: 800px)">
+    <link rel="stylesheet" href="./css/classic_d.css" media="(min-width: 800px)">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="./css/top_ba_modify.css">
 </head>
 <body>
 
@@ -33,7 +35,7 @@
             <div>
                 <img src="./image/eun/main_long/main03.png" alt="">
             </div>
-            <div>
+            <div class="title">
                 <h3>C l a s s i c</h3>
             </div>
 
@@ -41,6 +43,100 @@
 
         <nav>
             <!-- 상단 고정 -->
+            <div class="header">
+                <h1><a href="#"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
+                <nav>
+                    <span><a href="#" class="btn01" >KOR</a></span>
+                    <span><a href="#" class="btn02">ENG</a></span>
+                    <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+                    <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+                    <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width:100%;"></button></span>
+                </nav>
+
+                <div id="top">
+                    <div>
+                        <h2 class="top_a1">
+                            Welcome
+                            <span>
+                                <a href="#" class="btn01">KOR</a>
+                            </span>
+                            <span>
+                                <a href="#" class="btn02">ENG</a>
+                            </span>
+            
+                        </h2>
+                        <p class="top_a1">
+                            로그인을 하시면 더 많은 혜택을
+                            <br>
+                            받으실 수 있습니다
+                        </p>
+                        
+                        <ul id="a1">
+                            <li class="a1">
+                                <a href="#" class="a1" style="width: 100%;height: 100%;"><p style="margin-top: 14px;">회원가입</p> </a>
+                            </li>
+                            <li class="a1" style="background-color: white;color: black;">
+                                <a href="#"  class="Btn02" style="width: 100%;height: 100%; "><p style="margin-top: 14px;">로그인</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 200%;">
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_self">Brand Story</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa" style="margin-bottom: 0px;" id="abcd">
+                            <div >
+                                <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
+                            </div>
+                            <!--  id="ke_btn01" class="title"  Collection-->
+                            <ul id="ke_rl" class="smenu" style=" margin-top: -18px; width: 200%;" >
+                                <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
+                                <li> <a href="./classic.html" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
+                                <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
+                                <li> <a href="#" target="_self"><p class="ke_bumenyu">Three Piece</p></a> </li>
+                            </ul>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_blank">브랜드북</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <h><a href="#" class="title" target="_self">E-Catalog</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_self">IMAGE</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_self">MOVIE</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_self">회사소개</a></span>
+                            </div>
+                        </li>
+                        <li class="top_aa">
+                            <div >
+                                <span><a href="#" class="title" target="_self">고객센터</a></span>
+                            </div>
+                        </li>
+                       
+                        
+                    </ul>
+                    <button type="button" class="pop_close" onclick="topbax()">
+                        <span class="sound_only">카테고리</span>
+                        "닫기"
+                    </button>
+                </div>
+            </div>
 
 
 
@@ -61,11 +157,821 @@
 
         <article>
             
-            <!--  -->
-            <section
-            ></section>
-            <section></section>
-            <section></section>
+            <!-- section : menu -->
+            <section id="menu">
+                <div>
+                    <a href="">판매많은순</a>|
+                    <a href="">낮은가격순</a>|
+                    <a href="">높은가격순</a>|
+                    <a href="">평점높은순</a>|
+                    <a href="">후기많은순</a>|
+                    <a href="">최근등록순</a>|
+                </div>
+            </section>
+
+            <!-- section : layout -->
+            <section id="layout">
+                <img class="box1" src="./image/eun/classic/boxGray.png" alt="box" onclick="clickLayout(this)">
+                <img class="box2" src="./image/eun/classic/menuBlack.png" alt="menu" onclick="clickLayout(this)">
+            </section>
+
+            <!-- section : item -->
+            <section id="item" class="item">
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560766">
+                            <img src="./image/eun/classic/classic01.jpeg" alt="classic01">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560766">PS-116(Khaki Gray)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560765">
+                            <img src="./image/eun/classic/classic02.jpeg" alt="classic02">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560765">PS-116(Red Pink)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560764">
+                            <img src="./image/eun/classic/classic03.jpeg" alt="classic03">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560764">PS-116(Red Bean)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560763">
+                            <img src="./image/eun/classic/classic04.jpeg" alt="classic04">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560763">PS-116(Demi Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560762">
+                            <img src="./image/eun/classic/classic05.jpeg" alt="classic05">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560762">PS-116(Black)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560761">
+                            <img src="./image/eun/classic/classic06.jpeg" alt="classic06">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560761">PS-115(Cool Gray)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560760">
+                            <img src="./image/eun/classic/classic07.jpeg" alt="classic07">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560760">PS-115(L. Warm Gray)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560759">
+                            <img src="./image/eun/classic/classic08.jpeg" alt="classic08">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560759">PS-115(Purple Wine)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560758">
+                            <img src="./image/eun/classic/classic09.jpeg" alt="classic09">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560758">PS-115(Red Bean))</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560757">
+                            <img src="./image/eun/classic/classic10.jpeg" alt="classic10">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560757">PS-115(Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560756">
+                            <img src="./image/eun/classic/classic11.jpeg" alt="classic11">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560756">PS-114(Gold Kiwi)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560755">
+                            <img src="./image/eun/classic/classic12.jpeg" alt="classic12">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560755">PS-114(Red Bean)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560754">
+                            <img src="./image/eun/classic/classic13.jpeg" alt="classic13">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560754">PS-114(Demi Brown)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560753">
+                            <img src="./image/eun/classic/classic14.jpeg" alt="classic14">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560753">PS-114(Red Brown)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560752">
+                            <img src="./image/eun/classic/classic15.jpeg" alt="classic15">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560752">PS-114(Black)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560751">
+                            <img src="./image/eun/classic/classic16.jpeg" alt="classic16">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560751">PS-105(Cool Gray)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560750">
+                            <img src="./image/eun/classic/classic17.jpeg" alt="classic17">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560750">PS-105(Salmon Pink)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560749">
+                            <img src="./image/eun/classic/classic18.jpeg" alt="classic18">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560749">PS-105(Red Bean)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560748">
+                            <img src="./image/eun/classic/classic19.jpeg" alt="classic19">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560748">PS-105(Light Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560747">
+                            <img src="./image/eun/classic/classic20.jpeg" alt="classic20">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like" href="#" onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560747">PS-105(Black)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+               
+
+            </section>
+            <!-- section : item2 -->
+            <section class="item2 item">
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560746">
+                            <img src="./image/eun/classic/classic21.jpeg" alt="classic21">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560746">PS-104(Cool Gray)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560745">
+                            <img src="./image/eun/classic/classic22.jpeg" alt="classic22">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560745">PS-104(Blue)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560744">
+                            <img src="./image/eun/classic/classic23.jpeg" alt="classic23">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560744">PS-104(Demi Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560743">
+                            <img src="./image/eun/classic/classic24.jpeg" alt="classic24">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560743">PS-104(Light Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560742">
+                            <img src="./image/eun/classic/classic25.jpeg" alt="classic25">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560742">PS-104(Black)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560741">
+                            <img src="./image/eun/classic/classic26.jpeg" alt="classic26">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560741">PS-103(Cool Gray)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560740">
+                            <img src="./image/eun/classic/classic27.jpeg" alt="classic27">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560740">PS-103(Red Bean)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560739">
+                            <img src="./image/eun/classic/classic28.jpeg" alt="classic28">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560739">PS-103(Wine)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560738">
+                            <img src="./image/eun/classic/classic29.jpeg" alt="classic29">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560738">PS-103(Light Brown)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560737">
+                            <img src="./image/eun/classic/classic30.jpeg" alt="classic30">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560737">PS-103(Black)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560736">
+                            <img src="./image/eun/classic/classic31.jpeg" alt="classic31">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560736">PS-102(Blue Gray)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560735">
+                            <img src="./image/eun/classic/classic32.jpeg" alt="classic32">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560735">PS-102(Salmon Pink)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560734">
+                            <img src="./image/eun/classic/classic33.jpeg" alt="classic33">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560734">PS-102(Red Bean)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560733">
+                            <img src="./image/eun/classic/classic34.jpeg" alt="classic34">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560733">PS-102(Red Brown)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560732">
+                            <img src="./image/eun/classic/classic35.jpeg" alt="classic35">
+                        </a>
+                        <div class="icon">
+                            <a id="cart" onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like" onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560732">PS-102(Black)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560731">
+                            <img src="./image/eun/classic/classic36.jpeg" alt="classic36">
+                        </a>
+                        <div class="icon">
+                            <a id="cart"  onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like" onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560731">PS-101(Cool Gray)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560730">
+                            <img src="./image/eun/classic/classic37.jpeg" alt="classic37">
+                        </a>
+                        <div class="icon">
+                            <a id="cart" onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560730">PS-101(Red Bean)</a>
+                        <p><strong>전화문의</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560729">
+                            <img src="./image/eun/classic/classic38.jpeg" alt="classic38">
+                        </a>
+                        <div class="icon">
+                            <a id="cart" onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like"  onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560729">PS-101(Wine)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560728">
+                            <img src="./image/eun/classic/classic39.jpeg" alt="classic39">
+                        </a>
+                        <div class="icon">
+                            <a id="cart" onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like" onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560728">PS-101(Light Brown)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="card">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560727">
+                            <img src="./image/eun/classic/classic40.jpeg" alt="classic40">
+                        </a>
+                        <div class="icon">
+                            <a id="cart" onclick="clickCart()">
+                                <img src="./image/eun/classic/cart.png" alt="cart">
+                            </a>
+                            <a id="like" onclick="clickLike()">
+                                <img src="./image/eun/classic/like.png" alt="like">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a href="http://plasta.co.kr/shop/item.php?it_id=1604560727">PS-101(Black)</a>
+                        <p><strong>165,000원</strong></p>
+                    </div>
+                </div>
+               
+
+            </section>
+
+            <!-- section : more -->
+            <section id="more">
+                <a onclick="clickMore()">더보기 +</a>
+            </section>
 
         </article>
 
