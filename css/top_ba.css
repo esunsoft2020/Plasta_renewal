@@ -16,6 +16,7 @@
     width: 1280px;
   }
 }
+#ke_rl{padding: 0 0;}
 
 .header {
   width: 100%;
@@ -34,9 +35,10 @@
   align-items: center;
   z-index: 5;
 }
-header nav span{
+.header nav span{
   margin-left: 24px;
 }
+.header nav span button:checked{border: none;}
 
 h1, p {
   margin: 0;
@@ -232,7 +234,7 @@ margin-left: 16px;
 border: 1px solid #ddd;
 width: 360px;
 height: 50px;
-margin-left: -33px;
+
 padding-left: 0px;
 
 
