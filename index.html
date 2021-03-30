@@ -81,7 +81,7 @@ footer div div.right{
    </style>
 </head>
 <body>
-    <header >
+    <header  class="header">
         <h1><a href="#"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
         <nav>
             <span><a href="#" class="btn01" >KOR</a></span>
@@ -91,10 +91,18 @@ footer div div.right{
             <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width: 100%;"></button></span>
         </nav>
       </header>
-    <div >
-         <img src="http://plasta.whost.co.kr/images/sub/s_visual01.jpg" id="ke_imgnume" >
-        <p>안녕하세여</p>
+    <div id="keimage">
+         <img src="http://plasta.whost.co.kr/images/sub/s_visual01.jpg" class="kEaa2">
+
+         
+         
+         <style>#kebs{   
+            
+            color: #fff;
+            
+            padding: 0 5%;} </style>
     </div>
+    <div><h4 class="ke_title">안녕하세여</h4></div>
     <div id="top">
         <div>
             <h2 class="top_a1">
@@ -179,6 +187,55 @@ footer div div.right{
         </button>
     </div>
 
+    <div id="wrap">
+        <div><img src="http://plasta.whost.co.kr/images/sub/brandStory1.png" ></div>
+        <div><img src="./Image/text.png" ></div>
+        <div><img src="http://plasta.whost.co.kr/images/sub/brandStory2.png" ></div>
+        <div><img src="" ></div>
+        <div><img src="http://plasta.whost.co.kr/images/sub/brandStory3.png" >
+            <img src="http://plasta.whost.co.kr/images/sub/brandStory4.png" ></div>
+        <div><img src="" ></div>
+    </div>
+    <style>
+         #wrap{
+            width: 100%;
+            border:4px solid black;
+            margin: 0 auto;
+            margin: 0px;
+        }
+        #wrap div{
+            width: 100%;
+            height: 93;
+            display: inline-block;
+            /* 인리인 블럭특성은 기본적으로 좌우 여백을 가짐 */
+            margin-right: -6px;
+        }
+         @media (min-width: 320px) {
+            #wrap div{width: 100%;}
+            .header nav{margin-right: 3%;}
+            .pop_close{right: 3%;}
+            
+        }
+        /* 600px이상 : smart phone-landscape or tablet */
+        @media (min-width: 600px) {
+            #wrap div{
+                width: 50%;
+            }
+            .header nav{margin-right: 0px;}
+            .pop_close{right: 5px;}
+           
+            
+        }
+       
+
+
+
+         #wrap div:first-child{background-color: rgba(0, 0, 255, 0);}
+        #wrap div:nth-child(2){background-color: rgba(244, 247, 242, 0);}
+        #wrap div:nth-child(3){background-color: rgba(0, 217, 255, 0);}
+        #wrap div:nth-child(4){background-color: rgba(255, 0, 191, 0);}
+        #wrap div:nth-child(5){background-color: rgba(255, 0, 0, 0);}
+    </style>
 
     <footer style="background-color: black;" >
         <img src="./image/bottom/footer_logo.png" alt="logo">
