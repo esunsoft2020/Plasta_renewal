@@ -1,36 +1,24 @@
-*{margin: 0;padding: 0;}
-ul{list-style: none;}
+*{margin: 0;padding: 0;box-sizing: border-box}
+body{background-color: #f7f7f7;}
+ul>li{list-style: none}
 a{text-decoration: none;}
+.clearfix::after{content: "";display: block;clear: both;}
 
-
-body{
+body
+{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-header{
-    width: 100%;
-    background-image: url(../image/Imhayun_IMG/headermodel.jpg);
-    position: relative;
-}
-
-#logo{
-    padding-top: 30px;
-    padding-left: 30px;
-}
-#top_menu{
-    position: absolute;
-    right: 10px;
-    top: 20px;
-    color: white;
-}
-#top_menu a{color: white; font-size: 14px;}
-
+#page{width: 1920px; margin: 0 auto;}
 @media only screen and (max-width: 480px) {  }
 @media only screen and (max-width: 320px) {  }
 @media only screen and (max-width: 7800px) {  }
-/* footer a{text-decoration: none;} 기본적으로 필요 */
+
+
 footer{ 
+    margin-top: 10%;
     padding: 16px; 
     color: gray;
     font-size: 10px;
@@ -58,16 +46,5 @@ footer div div.right{
     top: 30px;
 }
 
-a{text-decoration: none; color: gray;}
-a:hover{ color: gray;}
- 
-#content #main img{width: 100%; border: 1px solid gray;}
-
-#content #banner li{border-bottom: 1px solid gray;}
-
-#content #banner a{display: block; text-align: center;}
-
-footer{padding: 0px 10px;}
-footer img{width: 100%;}
 a{text-decoration: none; color: gray;}
 a:hover{ color: gray;}

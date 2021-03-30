@@ -24,6 +24,7 @@ body{
 .content{
     width: 100%;
     font-size: 0.5em;
+    text-align: center;
 }
 #content li{
     display: inline;
@@ -31,13 +32,7 @@ body{
 }
 
 /* footer */
-footer{ 
-    padding: 12px; 
-    color: gray;
-    font-size: 12px;
-    position: relative;
-    font-size: 0.5em;
-}
+
 #top_drop{
     display: inline-block;
     position: fixed;
@@ -87,11 +82,24 @@ html {
     padding-left: 10px;
 }
 
-footer div div.left{width: 80%;}
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
 
 footer div div.left>p{margin-top: 8px;}
 
 footer div div.left div p{
+    margin: 0;
     display: inline-block;
 }
 
@@ -102,6 +110,10 @@ footer div div.right{
     right: 20px;
     top: 30px;
 }
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+
 
 /* 전체 페이지를 가운데로 */
 #page{width: 1920px; margin: 0 auto;}
