@@ -6,34 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입|Pla_sta</title>
     <link rel="stylesheet" href="./Sign_Up2.css" media="(min-width:600px)">
-    <link rel="stylesheet" href="./Singn_Up2_M.css" media="(max-width:600px)">
-    <script type="text/javascript">
-	/* 문자 새로고침 */
-	function refresh_captcha(){
-		document.getElementById("capt_img").src="captcha.php?waste="+Math.random(); 
-        //capt_img id를 불러와 문구들을 랜덤으로 돌린다
-	}
-    </script>
+    <link rel="stylesheet" href="./Sign_Up2_m.css" media="(max-width:600px)">
+    <link rel="stylesheet" href="top_ba_index_modify.css">
+
 </head>
 <body>
+    <nav>
+        <div class="header" id="header">
+            <h1><a href="./main.html"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
+            <nav style="margin-right: 15px;">
+                <span><a href="#" class="btn01" >KOR</a></span>
+                <span><a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a></span>
+                <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+                <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+                <span><img src="image/image_young/allmenu.png" class="btn btn-lind" onclick="topba()" alt="menu" style="width: 25px"></span>
+                <!-- <span><img class="btn btn-lind" onclick="topba()" style="background-image: url(/Plasta_renewal/image_young/allmenu.png); width:40px; height: 40px;"></button></span> -->
+                <!-- <span><button class="btn btn-lind" onclick="topba()" style="background-image: url(/Plasta_renewal/image_young/allmenu.png);"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width:100%;"></button></span> -->
+            </nav>
+    
+            <div id="top">
+                <div>
+                    <h2 class="top_a1">
+                        Welcome
+                        <span>
+                            <a href="#" class="btn01">KOR</a>
+                        </span>
+                        <span>
+                            <a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a>
+                        </span>
+        
+                    </h2>
+                    <p class="top_a1">
+                        로그인을 하시면 더 많은 혜택을
+                        <br>
+                        받으실 수 있습니다
+                    </p>
+                    
+                    <ul id="a1">
+                        <li class="a1">
+                            <a href="#" class="a1" style="width: 100%;height: 100%;"><p style="margin-top: 14px;">회원가입</p> </a>
+                        </li>
+                        <li class="a1" style="background-color: white;color: black;">
+                            <a href="#"  class="Btn02" style="width: 100%;height: 100%; "><p style="margin-top: 14px;">로그인</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 200%;">
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">Brand Story</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa" style="margin-bottom: 0px;" id="abcd">
+                        <div >
+                            <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
+                        </div>
+                        <!--  id="ke_btn01" class="title"  Collection-->
+                        <ul id="ke_rl" class="smenu" style=" margin-top: -18px; width: 200%;" >
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
+                            <li> <a href="./classic.html" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Three Piece</p></a> </li>
+                        </ul>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_blank">브랜드북</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <h><a href="#" class="title" target="_self">E-Catalog</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">IMAGE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">MOVIE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">회사소개</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">고객센터</a></span>
+                        </div>
+                    </li>
+                   
+                    
+                </ul>
+                <button type="button" class="pop_close" onclick="topbax()">
+                    <span class="sound_only">카테고리</span>
+                    "닫기"
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+        <script>
+            // var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            // if(nVScroll > 40){
+            //     $("#ex_box");css("position", "fixed");
+            // }  else $("#ex_box").css("position", "relative");
+            
+            
+            //     view_more_id.style.display="none";
+            //     header.style.backgroundColor="rgba(92, 92, 92, 0.5)" ;
+    
+            function topba(){
+                var e=document.getElementById('top').style.right='0px';
+            }
+            function topbax(){
+                var e=document.getElementById('top').style.right="-100%";
+            }
+            let dropdown=false;
+            function ke_topba(){
+               if(!dropdown){
+                document.getElementById('abcd').style.marginBottom='140px';
+                document.getElementById('ke_rl').style.display="block";
+                dropdown=true;
+               }else {
+                document.getElementById('abcd').style.marginBottom='0px';
+                document.getElementById('ke_rl').style.display="none";
+                dropdown=false;
+               }
+            }
+        </script>
 
     
 
     <div id="page">
         <header>
-            <div id="logo" style="position: absolute;">
-                <a href="http://plasta.co.kr"></a>
-                <img src="./image_young/logo.png" alt="LOGO">
-            </div>
-            <div id="top_menu">
-                <a href="./Sign_in.html"><img src="./image_young/ico_user.png" alt=""></a>
-                <a href=""><img src="./image_young/ico_cart.png" alt=""></a>
-                <a href=""><img src="./image_young/allmenu.png" alt=""></a>
-            </div>
         </header>
         <div id="visual">
-            <h3><span id="visible_text">회원가입</span></h3>
-            <!-- <img src="./image_young/sign_image.png" style="width: 100%; height: 40%;"> -->
+            <p id="visible_text">회원가입</p>
+            <!-- <img src="image/image_young/sign_image.png" style="width: 100%; height: 40%;"> -->
         </div>
     </div>
 
@@ -86,30 +200,31 @@
                     <div style="align-items: center; max-height: 40px;">
                         <img src="captcha.php" alt="captcha" title="captcha" id="capt_img"/>
                         <input type="text" name="captcha_edt" id="captcha_edt" style="margin: 0px;"/>
-                        <button onclick="sound_captcha();" type="button" style="background-image: url('./image_young/captcha_sound.png'); width: 40px; height: 40px;"  ></button>
-                        <button onclick="refresh_captcha();" style="scroll-behavior: unset; background-image: url(./image_young/captcha_refresh.png);width: 40px; height: 40px;"></button>
+                        <button onclick="sound_captcha();" type="button" style="background-image: url('image/image_young/captcha_sound.png'); width: 40px; height: 40px;"  ></button>
+                        <button onclick="refresh_captcha();" style="scroll-behavior: unset; background-image: url(image/image_young/captcha_refresh.png);width: 40px; height: 40px;"></button>
                     </div>
                     
                 </form>
-                
-            
             </section>
+            <div id="btn">
+                <input type="submit" value="회원가입" onclick="success()">
+            </div>
             <!-- wewe홈페이지 이동 -->
             <div id="wewe">
                 <a href="http://wewe2020.co.kr" target="_blank">
-                    <img src="./image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+                    <img src="image/image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
                 </a>
             </div>
             <!-- 스크롤 최상위로 -->
             <div>
                 <a href="#">
-                    <input type="image" src="./image_young/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+                    <input type="image" src="image/image_young/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
                 </a>
             </div>
         </div>
     </div>
     <footer style="background-color: black;">
-        <img src="./image_young/bottom/footer_logo.png" alt="logo">
+        <img src="image/image_young/footer_logo.png" alt="logo">
         <!-- left -->
         <div>
             <div class="left">
