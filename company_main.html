@@ -62,6 +62,7 @@
         <!-- Google Map API를 사용하는 script 추가 및 키발급 -->
         <script async
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEKG0AVCRt-_QxlvkWn1hwo576aM_G3Q&callback=initMap">
+            
         </script>
 
         <script>
@@ -78,7 +79,10 @@
                 var marker= new google.maps.Marker({
                     position: sj,
                     title: "석종점"
+                    
                 });
+                marker.setMap(map);
+                marker.addListener('click', function(){open('http://www.naver.com','_blank');});
                 marker.setMap(map);
 
             }
@@ -102,8 +106,8 @@
              function Map_ns(){
     
                 var e= document.getElementById('map');
-                new google.maps.Map( e, {center:{lat:37.499023, lng:127.062961},zoom:14} );
-                var sj= new google.maps.LatLng(37.499023,127.062961);
+                new google.maps.Map( e, {center:{lat:37.58095447608818, lng:127.04641038589025 },zoom:12} );
+                var sj= new google.maps.LatLng(37.58095447608818,127.04641038589025);
                 var opts={
                     center: sj,
                     zoom: 14
@@ -114,6 +118,7 @@
                     title: "은선점"
                 });
                 marker.setMap(map);
+                marker.addListener('click', function(){open('http://www.naver.com','_blank');});
 
             }
              function Map_jy(){
