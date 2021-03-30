@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <!-- Bootstrap CDN방식-->
+      <!-- js 적용 -->
+      <script src="./js/cp.js"></script> 
+      <!-- 외부스타일시트 적용 -->
+       <link rel="stylesheet" href="./css/topmenu.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
+
+    <style>
+         *{margin: 0px; padding: 0px; }
+        #mv{font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;}
+        @media(max-width:1280px){#mv{font-size:14px}}
+        @media(max-width:976px) {#mv{font-size:13px}}
+        @media(max-width:568px) {#mv{font-size:11px; }}
+        #mv_mainimg{background-image: url(./Image/img_jong/s_visual06.jpg);
+            width: 100%; height: 800px; display: table; position: relative;
+            background-position: right center; 
+            background-repeat: no-repeat; background-size: cover;}
+        @media(max-width:1480px) {#mv_mainimg{ height: 50vw;}} 
+        #mv_title{ display: table-cell; vertical-align: middle; color:white; font-size: 2em; font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif; font-weight: 600;
+                  letter-spacing: 0.2em; padding: 0 5%;}
+        @media(max-width:568px){#mv_title{ text-align: center;}}
+        #mv_contentbox{padding: 5% 0;width: 1600px;max-width: 100%;margin-left: auto;margin-right: auto; display: block; padding-bottom: 60px;/*footer에 가려지는 검색바*/}
+        #mv_content_top{float: left;line-height: 30px;font-size: 0.92em;color: #4e546f;background: #d4d4d4;padding: 0 10px;border-radius: 5px; display: block; margin-left: 16px;}
+        /* 화면 축소시 오른쪽이 너무 빔 */
+        #mv_search{float:left;border: 1px solid #ccc;border-radius: 3px; width: 360px; margin: 0 0 20px 20px; background: #fff;display: block; }
+         @media(max-width:976px){#mv_search{width:320px}} 
+         @media(max-width:568px){#mv_search{width:280px}} 
+        #mv_select{border: 0;margin: 9px 5px;height: 20px;float: left;border-right: 1px solid #ddd;}
+        #mv_select option{font-weight: normal;display: block;white-space: nowrap;min-height: 1.2em;padding: 0px 2px 1px;}
+        #mv_search_input{height: 38px;border: 0;padding: 0;background-color: transparent;float: left;font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;}
+        #mv_search_img{height: 38px;float: left;background: url(./Image/img_jong/sch_btn.png) no-repeat 50% 50%;border: 0;width: 40px;}
+
+        /* footer이미 897이하일때 이미지가 중앙으로감 */
+        @media(max-width:897px){footer>img{margin-left: -300px;}}
+
+            /* 하단 */
+                        #top_drop{
+                    display: inline-block;
+                    position: fixed;
+
+                    bottom: 1%;
+                    right: 10px;
+                    width: 50px;
+                    border: 0;
+                    opacity: 0.5;
+                    z-index: 1;
+                    max-width:max-content;
+                }
+                #top_drop:hover{
+                    opacity: 1;
+                }
+                #wewe{
+                    display: flex;
+                    position: fixed;
+                    vertical-align: bottom;
+                    bottom: 1%;
+                    right: 70px;
+                    max-width:max-content;
+                    border: 0;
+                    opacity: 0.8;
+                    text-align: center;
+                    height: 34px;
+                    z-index: 1;
+                    background-color: white;
+                    box-shadow: 1px 1px 1px 1px #e6e6e6;
+                    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+                    border-radius:20px;
+                    align-items: center;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    vertical-align:middle;
+
+                }
+                #wewe:hover{
+                    opacity: 1;
+                }
+                html {
+                    scroll-behavior: smooth;
+                }
+                #wewe img{
+                    max-width: 100px;
+                    vertical-align:middle;
+                    padding-left: 10px;
+                }
+
+            /* footer */
+                        /* footer a{text-decoration: none;} 기본적으로 필요 */
+                footer{ 
+                    padding: 16px; 
+                    color: gray;
+                    font-size: 10px;
+                    position: relative;
+                }
+
+                footer>img{
+                    margin-bottom: 10px;
+                }
+
+                footer div div.left{width: 75%;}
+
+                footer div div.left>p{margin-top: 8px;}
+
+                footer div div.left div p{
+                    margin: 0;
+                    display: inline-block;
+                }
+
+                footer div div.right{
+                    display: flex; 
+                    flex-direction: column;
+                    position: absolute;
+                    right: 20px;
+                    top: 30px;
+                }
+                a{text-decoration: none; color: gray;}
+                a:hover{ color: gray;}
+            
+            
+
+
+    </style>
+
+    <script>
+        function mv_1(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=11'}
+        function mv_2(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=10'}
+        function mv_3(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=9'}
+        function mv_4(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=8'}
+        function mv_5(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=7'}
+        function mv_6(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=6'}
+        function mv_7(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=5'}
+        function mv_8(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=4'}
+        function mv_9(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=3'}
+        function mv_10(){location.href='http://plasta.co.kr/bbs/board.php?bo_table=movie&wr_id=2'}
+       
+    </script>
+</head>
+<body>
+    <div id="mv">
+        <div id="mv_mainimg">
+            <h3 id="mv_title">MOVIE</h3>
+        </div>
+
+        <div id="mv_contentbox">
+            <div id="mv_content">
+
+                <div id="mv_content_top">
+                    <div id="mv_content_total">Total 10건 1페이지</div>
+                </div>
+           
+                <div id="mv_card" style="padding-top: 60px;">
+                    <div class="container" >
+                        <div class="row" >
+                            <div class="card ml-3  mb-5" style="width: 19rem; margin-left: 16px; cursor:pointer;" onclick="mv_1()">
+                                <img src="./Image/img_jong/mqdefault (9).jpg" class="card-img-top" >
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie10</h5>
+                                    <p class="card-text">Plasta_Movie10</p>
+                                   
+                                </div>
+                            </div>
+                            
+                        
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer; " onclick="mv_2()">
+                                <img src="./Image/img_jong/mqdefault (8).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie09</h5>
+                                    <p class="card-text">Plasta_Movie09</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_3()">
+                                <img src="./Image/img_jong/mqdefault (7).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie08</h5>
+                                    <p class="card-text">Plasta_Movie07</p>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_4()">
+                                <img src="./Image/img_jong/mqdefault (6).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie07</h5>
+                                    <p class="card-text">Plasta_Movie07</p>
+                                
+                                </div>
+                            </div>
+                
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px; cursor:pointer;" onclick="mv_5()">
+                                <img src="./Image/img_jong/mqdefault (5).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie06</h5>
+                                    <p class="card-text">Plasta_Movie06</p>
+                                
+                                </div>
+                            </div>
+                
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px; cursor:pointer;" onclick="mv_6()">
+                                <img src="./Image/img_jong/mqdefault (4).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie05</h5>
+                                    <p class="card-text">Plasta_Movie05</p>
+                                 
+                                </div>
+                            </div>
+                
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_7()">
+                                <img src="./Image/img_jong/mqdefault (3).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie04</h5>
+                                    <p class="card-text">Plasta_Movie04</p>
+                                 
+                                </div>
+                            </div>
+                
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_8()">
+                                <img src="./Image/img_jong/mqdefault (2).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie03</h5>
+                                    <p class="card-text">Plasta_Movie03</p>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_9()">
+                                <img src="./Image/img_jong/mqdefault (1).jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie02</h5>
+                                    <p class="card-text">Plasta_Movie02</p>
+                                  
+                                </div>
+                            </div>
+                
+                            <div class="card ml-3 mb-5" style="width: 19rem; margin-left: 16px;  cursor:pointer;" onclick="mv_10()">
+                                <img src="./Image/img_jong/mqdefault.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plasta_Movie01</h5>
+                                    <p class="card-text">Plasta_Movie01</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mv_search" >
+                        <select id="mv_select" >
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">제목+내용</option>
+                            <option value="">글쓴이</option>
+                        </select>
+                        <div><input id="mv_search_input" type="text" placeholder="검색어를 입력해주세요" size="25" maxlength="20"></div>
+                        <div><input id="mv_search_img" type="submit" value=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wewe">
+        <a href="http://wewe2020.co.kr/" target="_blank">
+            <img src="./Image/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+        </a>
+    </div>
+    <!-- 스크롤 최상위로 -->
+    <div>
+        <a href="#">
+            <input type="image" src="./Image/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+        </a>
+    </div>
+</body>
+
+<footer style="background-color: black;">
+    <img src="./Image/footer_logo.png" alt="logo">
+    <!-- left -->
+    <div>
+        <div class="left">
+            <div>
+                <p>상호명 : 주식회사 휴브아이웨어</p>
+                <p>대표 : 황윤기</p>
+                <p>주소 : 대구광역시 서구 달서천로 399(원대동1가)</p>
+                <p>사업자 등록번호 : 504-81-97189</p>
+                <p>대표번호 : 053-383-0402</p>
+
+                <p>팩스번호 : 053-357-1050</p>
+                <p>메일 : hube@hubeeyewear.com</p>
+            </div>
+            <p>COPYRIGHT © 2020 PLA_STA. All RIGHTS RESERVED.</p>
+        </div>
+        <!-- right -->
+        <!-- 개인 회사 연결 -->
+        <div class="right">
+            <!-- 회사소개 -->
+            <a href="" class="">회사소개</a>
+            <!-- 개인정보처리방침 -->
+            <a href="">개인정보처리방침</a>
+            <!-- 이용약관 -->
+            <a href="">이용약관</a>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+<!-- 상단 고정 -->
+<div class="header">
+    <h1><a href="./main.html"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
+    <nav>
+        <span><a href="#" class="btn01" >KOR</a></span>
+        <span><a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a></span>
+        <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+        <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+        <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width:100%;"></button></span>
+    </nav>
+
+    <div id="top" >
+        <div>
+            <h2 class="top_a1">
+                Welcome
+                <span>
+                    <a href="#" class="btn01">KOR</a>
+                </span>
+                <span>
+                    <a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a>
+                </span>
+
+            </h2>
+            <p class="top_a1">
+                로그인을 하시면 더 많은 혜택을
+                <br>
+                받으실 수 있습니다
+            </p>
+            
+            <ul id="a1">
+                <li class="a1">
+                    <a href="#" class="a1" style="width: 100%;height: 100%;"><p style="margin-top: 14px;">회원가입</p> </a>
+                </li>
+                <li class="a1" style="background-color: white;color: black;">
+                    <a href="#"  class="Btn02" style="width: 100%;height: 100%; "><p style="margin-top: 14px;">로그인</p></a>
+                </li>
+            </ul>
+        </div>
+        <ul id="sj_a2" style="margin-right: 0;width: 200%; margin-top: 20px;margin-left: -2rem; ">
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_self">Brand Story</a></span>
+                </div>
+            </li>
+            <li class="top_aa" style="margin-bottom: 0px;" id="abcd">
+                <div >
+                    <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
+                </div>
+                <!--  id="ke_btn01" class="title"  Collection-->
+                <ul id="ke_rl" class="smenu" style=" margin-top: -18px; width: 200%;margin-left: -2rem; " >
+                    <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
+                    <li> <a href="./classic.html" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
+                    <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
+                    <li> <a href="#" target="_self"><p class="ke_bumenyu">Three Piece</p></a> </li>
+                </ul>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_blank">브랜드북</a></span>
+                </div>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <h><a href="#" class="title" target="_self">E-Catalog</a></span>
+                </div>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_self">IMAGE</a></span>
+                </div>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_self">MOVIE</a></span>
+                </div>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_self">회사소개</a></span>
+                </div>
+            </li>
+            <li class="top_aa">
+                <div >
+                    <span><a href="#" class="title" target="_self">고객센터</a></span>
+                </div>
+            </li>
+           
+            
+        </ul>
+        <button type="button" class="pop_close" onclick="topbax()">
+            <span class="sound_only">카테고리</span>
+            "닫기"
+        </button>
+    </div>
+</div>
+</html>
