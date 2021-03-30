@@ -1,0 +1,73 @@
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    background-image: url(../image/Imhayun_IMG/headermodel.jpg);
+    position: relative;
+}
+
+#logo{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+#top_menu{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: white;
+}
+#top_menu a{color: white; font-size: 14px;}
+
+@media only screen and (max-width: 480px) {  }
+@media only screen and (max-width: 320px) {  }
+@media only screen and (max-width: 7800px) {  }
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    margin: 0;
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+ 
+#content #main img{width: 100%; border: 1px solid gray;}
+
+#content #banner li{border-bottom: 1px solid gray;}
+
+#content #banner a{display: block; text-align: center;}
+
+footer{padding: 0px 10px;}
+footer img{width: 100%;}
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}

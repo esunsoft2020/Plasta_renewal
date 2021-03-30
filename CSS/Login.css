@@ -1,0 +1,48 @@
+html,body{
+    margin: 0px; padding: 0px;
+    width: 100%; height: 100%;
+}
+#warp{
+    width: 1920px;
+    margin: auto;
+    
+}
+
+header{
+    width: 100%;
+    background: url(../image/Imhayun_IMG/Loginmodel.jpg);
+    text-align: center;
+    /* header안의 자식요소들을 absolute로 배치할 거라서. */
+    font-size: 0.5em;
+    
+}
+
+.content{
+    width: 100%;
+    font-size: 0.5em;
+}
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    font-size: 0.5em;
+}
+
+footer div div.left{width: 80%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+#page{width: 1920px; margin: 0 auto;}

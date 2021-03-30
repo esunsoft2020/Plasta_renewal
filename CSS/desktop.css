@@ -1,0 +1,120 @@
+html,body{
+    margin: 0px; padding: 0px;
+    width: 100%; height: 100%;
+}
+#warp{
+    width: 1920px;
+    margin: auto;
+    
+}
+
+header{
+    width: 100%;
+    background: url(../image/Imhayun_IMG/headermodel.jpg);
+    text-align: center;
+    /* header안의 자식요소들을 absolute로 배치할 거라서. */
+    font-size: 0.5em;
+    
+}
+body{
+    width: 100%;
+    font-size: 0.75em;
+}
+
+.content{
+    width: 100%;
+    font-size: 0.5em;
+    text-align: center;
+}
+#content li{
+    display: inline;
+    margin-left: 50px;
+}
+
+/* footer */
+
+#top_drop{
+    display: inline-block;
+    position: fixed;
+
+    bottom: 1%;
+    right: 10px;
+    width: 50px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+}
+
+/* footer a{text-decoration: none;} 기본적으로 필요 */
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 10px;
+    position: relative;
+}
+
+footer>img{
+    margin-bottom: 10px;
+}
+
+footer div div.left{width: 75%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    margin: 0;
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+a{text-decoration: none; color: gray;}
+a:hover{ color: gray;}
+
+
+/* 전체 페이지를 가운데로 */
+#page{width: 1920px; margin: 0 auto;}
+
