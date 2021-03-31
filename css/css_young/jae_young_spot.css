@@ -1,0 +1,146 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body {
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #686868;
+    line-height: 1.3em;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: -.04em;
+    word-break: keep-all;
+}
+
+#contents{
+    margin: auto;
+    width: 620px;
+    height: 735px;
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#visual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./../../image/image_young/s_visual13.jpg');
+    padding: auto;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#visible_text{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 1480px){
+    #visual{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('./../../image/image_young/s_visual13.jpg');
+        width: 100%;
+        height: 50vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+}
+@media (max-width: 975px){
+    #visible_text{
+        width: 50%;
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
+    #contents{
+        margin: auto;
+        width: 620px;
+        height: 735px;
+        padding: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+}
+
+#top_drop{
+    display: inline-block;
+    position: fixed;
+    margin-right: 10px;
+    bottom: 1%;
+    right: 10px;
+    width: 40px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+} 
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 12px;
+    position: relative;
+}
+
+footer div div.left{width: 80%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}

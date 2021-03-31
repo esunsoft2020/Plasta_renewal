@@ -1,0 +1,231 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body {
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #686868;
+    line-height: 1.3em;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: -.04em;
+    word-break: keep-all;
+}
+
+
+
+#contents{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#mtc{
+    border:1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+#visual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./../../image/image_young/sign_image.png');
+    width: 100%;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+#visible_text{
+    font-size: 25px;
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+#chkall label{
+    margin-right: 10px;
+}
+
+#fregister_term{
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+}
+
+#cb1{
+ display: inline;
+ float: right;
+ margin-right: 10px;
+}
+
+#fregister_term h2{
+    display: inline;
+    text-align: left;
+    width: 100%;
+    height: 41px;
+    margin-left: 10px;
+}
+textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.fregister_agree{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 10px;
+    line-height: 40px;
+    font-size: 0.92em;
+}
+
+#chkall{
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 12px;
+    position: relative;
+}
+
+footer div div.left{width: 80%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+/* img{
+    border: 0;
+    font-size: 0;
+    vertical-align: top;
+} */
+#top_drop{
+    display: inline-block;
+    position: fixed;
+    
+    bottom: 1%;
+    right: 10px;
+    width: 50px;
+    border: 0;
+    opacity: 0.5;
+    z-index: 1;
+    max-width:max-content;
+}
+#top_drop:hover{
+    opacity: 1;
+}
+#wewe{
+    display: flex;
+    position: fixed;
+    vertical-align: bottom;
+    bottom: 1%;
+    right: 70px;
+    max-width:max-content;
+    border: 0;
+    opacity: 0.8;
+    text-align: center;
+    height: 34px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #e6e6e6;
+    font-family: 'S-CoreDream', 'Noto Sans Korean', 'Noto Sans KR', sans-serif;
+    border-radius:20px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align:middle;
+    
+}
+#wewe:hover{
+    opacity: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ #wewe img{
+    max-width: 100px;
+    vertical-align:middle;
+    padding-left: 10px;
+} 
+
+#fregister_term2{
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+#fregister_term2 h2{
+    display: inline;
+    text-align: left;
+    width: 640px;
+    height: 41px;
+    margin: 0px 15px;
+}
+#cb2{
+    display: inline;
+    float: right;
+    margin: 0px 15px;
+   }
+#fregister_term2_title{
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+table{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+#table{
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    align-content: center;
+}
+table th{
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    height: 40px;
+    width: 33%;
+}
+table td{
+    border: 1px solid #e0e0e0;
+    color: #787878;
+    height: 60px;
+    width: 33%;
+}
+#btn input{
+    display: flex;
+    background-color: #3d3e3e;
+    width: 250px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    opacity: 0.8;
+}
+#btn input:hover{
+    opacity: 1;
+}

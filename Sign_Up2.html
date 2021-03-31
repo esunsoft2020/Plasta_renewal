@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입|Pla_sta</title>
+    <link rel="stylesheet" href="css/css_young/Sign_Up2.css" media="(min-width:600px)">
+    <link rel="stylesheet" href="css/css_young/Sign_Up2_m.css" media="(max-width:600px)">
+    <link rel="stylesheet" href="css/css_young/top_ba_index_modify.css">
+
+</head>
+<body>
+    <nav>
+        <div class="header" id="header">
+            <h1><a href="./main.html"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
+            <nav style="margin-right: 15px;">
+                <span><a href="#" class="btn01" >KOR</a></span>
+                <span><a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a></span>
+                <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+                <span><a href="#"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+                <span><img src="image/image_young/allmenu.png" class="btn btn-lind" onclick="topba()" alt="menu" style="width: 25px"></span>
+                <!-- <span><img class="btn btn-lind" onclick="topba()" style="background-image: url(/Plasta_renewal/image_young/allmenu.png); width:40px; height: 40px;"></button></span> -->
+                <!-- <span><button class="btn btn-lind" onclick="topba()" style="background-image: url(/Plasta_renewal/image_young/allmenu.png);"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width:100%;"></button></span> -->
+            </nav>
+    
+            <div id="top">
+                <div>
+                    <h2 class="top_a1">
+                        Welcome
+                        <span>
+                            <a href="#" class="btn01">KOR</a>
+                        </span>
+                        <span>
+                            <a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a>
+                        </span>
+        
+                    </h2>
+                    <p class="top_a1">
+                        로그인을 하시면 더 많은 혜택을
+                        <br>
+                        받으실 수 있습니다
+                    </p>
+                    
+                    <ul id="a1">
+                        <li class="a1">
+                            <a href="#" class="a1" style="width: 100%;height: 100%;"><p style="margin-top: 14px;">회원가입</p> </a>
+                        </li>
+                        <li class="a1" style="background-color: white;color: black;">
+                            <a href="#"  class="Btn02" style="width: 100%;height: 100%; "><p style="margin-top: 14px;">로그인</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 200%;">
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">Brand Story</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa" style="margin-bottom: 0px;" id="abcd">
+                        <div >
+                            <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
+                        </div>
+                        <!--  id="ke_btn01" class="title"  Collection-->
+                        <ul id="ke_rl" class="smenu" style=" margin-top: -18px; width: 200%;" >
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
+                            <li> <a href="./classic.html" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Three Piece</p></a> </li>
+                        </ul>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_blank">브랜드북</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <h><a href="#" class="title" target="_self">E-Catalog</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">IMAGE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">MOVIE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">회사소개</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">고객센터</a></span>
+                        </div>
+                    </li>
+                   
+                    
+                </ul>
+                <button type="button" class="pop_close" onclick="topbax()">
+                    <span class="sound_only">카테고리</span>
+                    "닫기"
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+        <script>
+            // var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            // if(nVScroll > 40){
+            //     $("#ex_box");css("position", "fixed");
+            // }  else $("#ex_box").css("position", "relative");
+            
+            
+            //     view_more_id.style.display="none";
+            //     header.style.backgroundColor="rgba(92, 92, 92, 0.5)" ;
+    
+            function topba(){
+                var e=document.getElementById('top').style.right='0px';
+            }
+            function topbax(){
+                var e=document.getElementById('top').style.right="-100%";
+            }
+            let dropdown=false;
+            function ke_topba(){
+               if(!dropdown){
+                document.getElementById('abcd').style.marginBottom='140px';
+                document.getElementById('ke_rl').style.display="block";
+                dropdown=true;
+               }else {
+                document.getElementById('abcd').style.marginBottom='0px';
+                document.getElementById('ke_rl').style.display="none";
+                dropdown=false;
+               }
+            }
+        </script>
+
+    
+
+    <div id="page">
+        <header>
+        </header>
+        <div id="visual">
+            <p id="visible_text">회원가입</p>
+            <!-- <img src="image/image_young/sign_image.png" style="width: 100%; height: 40%;"> -->
+        </div>
+    </div>
+
+    <div id="contents">
+        <form name="fregister" id="fregister" autocomplete="off" onsubmit="return fregister_submit(this); " autocomplete="off">
+            <div id="id_pw">
+                <div>
+                    <h2 ><strong>사이트 이용정보 입력</strong></h2>
+                    <div>
+                        <input type="text" name="id_edit" id="id_edit" placeholder="아이디">
+                        <p style="color: blue; font-size: 12px; padding-bottom: 10px; text-align: left;">영문자,숫자,_만 입력가능.최소3자이상 입력하세요.</p>
+                        <input type="password" name="pw_eidt" id="pw_eidt" placeholder="비밀번호" style="margin-bottom: 5px;">
+                        <input type="password" name="pw_eidt" id="pw_eidt" placeholder="비밀번호확인"> 
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="fregister_term2">
+                    <h2><strong>개인정보 입력</strong></h2>
+                    <div id="privacy">
+                        <input type="text" name="privacy_name" id="privacy_name"  placeholder="이름">
+                        <p style="color: blue; font-size: 12px; text-align: left;">공백없이 한글,영어,숫자만 입력 가능(한글2자, 영문4자 이상)</p>
+                        <p style="color: blue; font-size: 12px; text-align: left; margin-bottom: 15px;">닉네임을 바꾸시면 앞으로 60일 이내에는 변경 할수 없습니다.</p>
+                        <input type="text" name="pw_eidt" id="pw_eidt" placeholder="닉네임" style="margin-bottom: 5px;">
+                        <input type="email" name="pw_eidt" id="pw_eidt" placeholder="E-mail"> 
+                    </div>
+            </section>
+
+            <section id="privacy_setting">
+                <h2><strong>기타 개인설정</strong></h2>
+                <div style=" margin-bottom: 5px;">
+                    <h4><strong>메일링서비스</strong></h4>
+                    <input type="checkbox" name="ch01" id="ch01">
+                    <label for="ch01" style="font-size: 12px;">정보 메일을 받겠습니다.</label>
+                </div>
+                <div>
+                    <h4><strong>정보공개</strong></h4>
+                    <input type="checkbox" name="ch02" id="ch02">
+                    <label for="ch02">다른분들이 나의 정보을 볼수 있도록 합니다.</label>
+                    <p style="color: blue; font-size: 12px; padding-bottom: 10px; text-align: left;">정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.</p>
+                </div>
+                <div style=" margin-bottom: 10px;">
+                    <h4><strong>자동등록방지</strong></h4>
+                    <input type="checkbox" name="ch01" id="ch01">
+                    <label for="ch01">정보 메일을 받겠습니다.</label>
+                </div>
+                <form method="post" action="join_ok.php" id="captcha">
+                    <h4>자동가입방지문구 입력</h4>
+                    <div style="align-items: center; max-height: 40px;">
+                        <img src="captcha.php" alt="captcha" title="captcha" id="capt_img"/>
+                        <input type="text" name="captcha_edt" id="captcha_edt" style="margin: 0px;"/>
+                        <button onclick="sound_captcha();" type="button" style="background-image: url('image/image_young/captcha_sound.png'); width: 40px; height: 40px;"  ></button>
+                        <button onclick="refresh_captcha();" style="scroll-behavior: unset; background-image: url(image/image_young/captcha_refresh.png);width: 40px; height: 40px;"></button>
+                    </div>
+                    
+                </form>
+            </section>
+            <div id="btn">
+                <input type="submit" value="회원가입" onclick="success()">
+            </div>
+            <!-- wewe홈페이지 이동 -->
+            <div id="wewe">
+                <a href="http://wewe2020.co.kr" target="_blank">
+                    <img src="image/image_young/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+                </a>
+            </div>
+            <!-- 스크롤 최상위로 -->
+            <div>
+                <a href="#">
+                    <input type="image" src="image/image_young/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: black;">
+        <img src="image/image_young/footer_logo.png" alt="logo">
+        <!-- left -->
+        <div>
+            <div class="left">
+                <div>
+                    <p>상호명 : 주식회사 휴브아이웨어</p>
+                    <p>대표 : 황윤기</p>
+                    <p>주소 : 대구광역시 서구 달서천로 399(원대동1가)</p>
+                    <p>사업자 등록번호 : 504-81-97189</p>
+                    <p>대표번호 : 053-383-0402</p>
+
+                    <p>팩스번호 : 053-357-1050</p>
+                    <p>메일 : hube@hubeeyewear.com</p>
+                </div>
+                <p>COPYRIGHT © 2020 PLA_STA. All RIGHTS RESERVED.</p>
+            </div>
+            <!-- right -->
+            <!-- 개인 회사 연결 -->
+            <div class="right">
+                <!-- 회사소개 -->
+                <a href="" class="">회사소개</a>
+                <!-- 개인정보처리방침 -->
+                <a href="">개인정보처리방침</a>
+                <!-- 이용약관 -->
+                <a href="">이용약관</a>
+
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
