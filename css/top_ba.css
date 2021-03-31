@@ -3,20 +3,37 @@
     font-size: 11px;
     width: 568px;
   }
+  .card-title{
+    font-size: xxx-large;
+    padding-top: 15%;
+    text-align: center;
+  }
+  #top{width: 100%;}
+  .ke_png{width: 100%;}
 }
 @media (max-width: 976px){
   body {
     font-size: 13px;
-    width: 978px;
+    
   }
 }
-@media (max-width: 1280px){
+@media (min-width: 568px){
   body {
-    font-size: 14px;
-    width: 1280px;
+    font-size: 36px;
+   
   }
+  .card-title{
+    font-size: xxx-large;
+    padding-top: 20%;
+    text-align: inherit;
+    padding-left: 20%;
+  }
+  #top{width: 360px;}
+  .ke_png{width:100% ;}
 }
+
 #ke_rl{padding: 0 0;}
+
 
 .header {
   width: 100%;
@@ -54,15 +71,18 @@ body {
 }
 
 body, html {
-  height: 200%;
+  height: 100%;
 }
-
+ol, ul {
+  padding-left: 0;
+}
 * {
   box-sizing: border-box;
 }
+
 #top{
   display: block;
-  width: 360px;
+ 
   height: 100%;
   background: rgb(255, 255, 255);
   position: fixed;
@@ -283,7 +303,7 @@ padding: 0 0;
   width: 200%;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   #top{width: 100%;}
   .top_aa{width: 200%;}
   #ke_img{width: 90px; margin-right: 10px;}
@@ -292,9 +312,11 @@ padding: 0 0;
   #keimage{width: 100%;}
   .top_img{width: 7%;}
   header nav span{margin-left: 7px;}
-  
+  #card1{width: 50%;}
+  .kEaa2{width: 100% ; height: auto;}
   
 }
+
 @media (min-width: 900px) {
   #top{width: 360px;}
   .top_aa{width: 200%;}
@@ -302,12 +324,11 @@ padding: 0 0;
     transition: all 0.4s ease;}
   .btn01{width: 70px;}
   .btn02{width: 70px;}
-  .kEaa2{width: 100vw ; height: 35vw;}
   
   }
   #keimage.ke_title{width: 100%; display: flex; align-items: center;
   justify-content: center; position: absolute; top: 15vw; left: -25vw;}
   .kEaa2{width: 100%; height: auto; object-fit: cover; ;
   position: relative;}
-  /* margin-left: -50vw */
-
+  
+  
