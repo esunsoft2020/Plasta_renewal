@@ -19,84 +19,58 @@ body {
     /* border: 1px dotted red; */
 }
 
-#logo{
-    position: absolute;
-    top: 30px;
-    left: 20px;
-}
-
-#top_menu{
-    position: absolute;
-    top: 30px;
-    right: 20px;
-}
-
-#top_menu a{
-    display: inline;
-    margin-right: 20px;
-}
-
 #contents{
     margin: auto;
-    width: 1600px;
-    padding: 30px;
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 
 #visual{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('./image_young/s_visual13.jpg');
-    padding: auto;
+    background-image: url('./../../image/image_young/s_visual13.jpg');
     width: 100%;
-    height: 800px;
+    height: 50vw;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
 }
+
 #visible_text{
-    font-size: 35px;
+    font-size: 25px;
+    width: 100%;
     font-weight: 900;
-    color: white;
     text-align: center;
+    color: white;
 }
-@media (max-width: 1480px){
-    #visual{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: url('./image_young/s_visual13.jpg');
-        width: 100%;
-        height: 50vw;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    #contents{
-        margin: auto;
-        width: 100%;
-        padding: 30px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    
-}
-@media (max-width: 975px){
-    #visible_text{
-        font-size: 30px;
-        font-weight: 900;
-        color: white;
-        text-align: center;
-    }
-}
+
 /* 품목별 선택지 */
 #select_collection{
-    text-align: right;
-    margin: 0px 50px 50px 0px;
+    text-align: center;
     color: #686868;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
 }
+#select_collection p a{
+    width: 30%;
+    margin: 0px 24px 0px 24px;
+    
+}
+a:active {
+    color:  gray;
+}
+#ex {
+    font-size: 0px;
+    }
+    
+#ex:before {
+    content: " 높은가격순";
+    font-size: 14.2px;
+    display: inline;
+    }
 
 /* 상품품목 사이즈 변환 */
 #size_change{
@@ -123,14 +97,15 @@ ul{
     flex-direction: row; /*배치의 수평배치*/
     justify-content: space-evenly;
     margin-top: 70px;
+    width: 100%;
 }
 li{
-    
-    width: auto;
+    width: 45%;
     color: #686868;
     text-decoration: none;
-    margin: 0px 7px;
     text-align: center;
+    margin-right: 5px;
+    margin-bottom: 15px;
 }
 h4{
     margin: 15px 7px 5px 7px;
@@ -138,10 +113,9 @@ h4{
     color: #000;
 }
 li img{
-    
+    width: 80%;
     border:1px solid #e0e0e0;
 }
-
 
 #view_more{
     display: flex;
@@ -156,40 +130,17 @@ li img{
     margin: auto;
     outline: none;
 }
-
 #page2{
     display: none;
 }
 
-footer{ 
-    padding: 16px; 
-    color: gray;
-    font-size: 12px;
-    position: relative;
-}
-
-footer div div.left{width: 80%;}
-
-footer div div.left>p{margin-top: 8px;}
-
-footer div div.left div p{
-    display: inline-block;
-}
-
-footer div div.right{
-    display: flex; 
-    flex-direction: column;
-    position: absolute;
-    right: 20px;
-    top: 30px;
-}
-
 #top_drop{
     display: inline-block;
-    position: fixed;   
+    position: fixed;
+    margin-right: 10px;
     bottom: 1%;
     right: 10px;
-    width: 50px;
+    width: 40px;
     border: 0;
     opacity: 0.5;
     z-index: 1;
@@ -218,7 +169,6 @@ footer div div.right{
     padding-right: 10px;
     padding-left: 10px;
     vertical-align:middle;
-    
 }
 #wewe:hover{
     opacity: 1;
@@ -231,19 +181,25 @@ html {
     vertical-align:middle;
     padding-left: 10px;
 } 
-
-#fregister_term2{
-    width: 650px;
-    height: 420px;
-    line-height: 40px;
-    text-align: left;
-    margin-bottom: 30px;
-}
-#fregister_term2 h2{
-    display: inline;
-    text-align: left;
-    width: 640px;
-    height: 41px;
-    margin: 0px 15px;
+footer{ 
+    padding: 16px; 
+    color: gray;
+    font-size: 12px;
+    position: relative;
 }
 
+footer div div.left{width: 80%;}
+
+footer div div.left>p{margin-top: 8px;}
+
+footer div div.left div p{
+    display: inline-block;
+}
+
+footer div div.right{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
