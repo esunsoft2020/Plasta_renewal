@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+    <script src="./js/index.js"></script>
+
+    <link rel="stylesheet" href="./css/classic_m.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="./css/classic_t.css" media="(min-width:600px)">
+    <link rel="stylesheet" href="./css/classic_d.css" media="(min-width: 800px)">
+    <link rel="stylesheet" href="./css/top_ba_index_modify.css">
+
+    <link rel="stylesheet" href="./CSS/clientCenter.css">
+  
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <img src="./image/eun/main_long/main04.png" alt="">
+        </div>
+        <div class="title">
+            <h3>자주하시는 질문</h3>
+        </div>
+
+    </header>
+
+    <nav>
+        <!-- 상단 고정 -->
+        <div class="header">
+            <h1><a href="./index.html"><img src="http://plasta.whost.co.kr/data/common/mobile_logo_img" id="ke_img" ></a></h1>
+            <nav>
+                <span><a href="#" class="btn01" >KOR</a></span>
+                <span><a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a></span>
+                <span><a href="./IM_LOGIN.html"><img src="http://plasta.whost.co.kr/images/ico_user.png" class="ke_top_img"></a></span>
+                <span><a href="#" onclick="alert('장바구니 준비중입니다.')"><img src="http://plasta.whost.co.kr/images/ico_cart.png" class="ke_top_img" ></a></span>
+                <span><button class="btn btn-lind" onclick="topba()"><img src="http://plasta.whost.co.kr/images/allmenu.png" class="ke_top_img" style="width:100%;"></button></span>
+            </nav>
+
+            <div id="top">
+                <div>
+                    <h2 class="top_a1">
+                        Welcome
+                        <span>
+                            <a href="#" class="btn01">KOR</a>
+                        </span>
+                        <span>
+                            <a href="#" class="btn02" onclick="alert('준비중입니다.')">ENG</a>
+                        </span>
+        
+                    </h2>
+                    <p class="top_a1">
+                        로그인을 하시면 더 많은 혜택을
+                        <br>
+                        받으실 수 있습니다
+                    </p>
+                    
+                    <ul id="a1">
+                        <li class="a1">
+                            <a href="#" class="a1" style="width: 100%;height: 100%;"><p style="margin-top: 14px;">회원가입</p> </a>
+                        </li>
+                        <li class="a1" style="background-color: white;color: black;">
+                            <a href="#"  class="Btn02" style="width: 100%;height: 100%; "><p style="margin-top: 14px;">로그인</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="" style="border: 1px solid #ddd; margin-left: 0;margin-right: 0;width: 200%;">
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">Brand Story</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa" style="margin-bottom: 0px;" id="abcd">
+                        <div >
+                            <span><a href="#" class="title" id="ke_btn01" onclick="ke_topba()">Collection</a></span>
+                        </div>
+                        <!--  id="ke_btn01" class="title"  Collection-->
+                        <ul id="ke_rl" class="smenu" style=" margin-top: -18px; width: 200%;" >
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">New Collection</p></a> </li>
+                            <li> <a href="./classic.html" target="_self"><p class="ke_bumenyu">Classic</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Combi</p></a> </li>
+                            <li> <a href="#" target="_self"><p class="ke_bumenyu">Three Piece</p></a> </li>
+                        </ul>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_blank">브랜드북</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <h><a href="#" class="title" target="_self">E-Catalog</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">IMAGE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">MOVIE</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">회사소개</a></span>
+                        </div>
+                    </li>
+                    <li class="top_aa">
+                        <div >
+                            <span><a href="#" class="title" target="_self">고객센터</a></span>
+                        </div>
+                    </li>
+                   
+                    
+                </ul>
+                <button type="button" class="pop_close" onclick="topbax()">
+                    <span class="sound_only">카테고리</span>
+                    "닫기"
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <!-- 하단 부분 -->
+        <div id="wewe">
+            <a href="http://wewe2020.co.kr/" target="_blank">
+                <img src="./image/eun/bottom/wewe_logo.png" alt="wewe_logo"><span style="color: #333333; margin-left:5px;">위위 바로가기</span>
+            </a>
+        </div>
+        <!-- 스크롤 최상위로 -->
+        <div>
+            <a href="#">
+                <input type="image" src="./image/eun/bottom/top_btn.png" alt="상단" id="top_drop" onclick="button_top_drop()"onfocus=this.blur()>
+            </a>
+        </div>
+
+    </nav>
+
+
+    <article>
+        <section class="faq">
+            <h4><strong>FAQ검색</strong></h1>
+            <div>
+                <input type="text">
+                <a class="card" href=""><img src="./image/eun/article/search.png" alt="searchBtn"></a>
+            </div>
+            
+            
+        </section>
+        <hr>
+        <section class="ask">
+           
+            <p>찾으시는 답변이 없으면 <strong>1:1문의하기</strong>를 이용해 주세요.</p>
+            <a href=""><strong>1:1 문의하기</strong></a>
+        </section>
+
+        
+
+    </article>
+
+    <section class="list">
+        <div class="q">
+            <a href=""><strong>자주하시는 질문</strong></a>
+        </div>
+        
+        <div class="iii">
+            <p>등록된 FAQ가 없습니다.</p>
+        </div>
+    </section>
+
+
+    
+    
+
+
+
+
+
+
+
+
+    <footer style="background-color: black;">
+        <img src="./image/eun/bottom/footer_logo.png" alt="logo">
+        <!-- left -->
+        <div>
+            <div class="left">
+                <div>
+                    <p>상호명 : 주식회사 왕십리</p>
+                    <p>대표 : 이은선</p>
+                    <p>주소 : 서울시 성동구 왕십리로 303 4층 </p>
+                    <p>사업자 등록번호 : 000-00-00000</p>
+                    <p>대표번호 : 000-0000-0000</p>
+
+                    <p>팩스번호 : 0504-080-1743</p>
+                    <p>메일 : esunsoft2020@gmail.com</p>
+                </div>
+                <p>COPYRIGHT © 2020 PLA_STA. All RIGHTS RESERVED.</p>
+            </div>
+            <!-- right -->
+            <!-- 개인 회사 연결 -->
+            <div class="right">
+                <!-- 회사소개 -->
+                <a href="./eunMap.html" class="">회사소개</a>
+                <!-- 개인정보처리방침 -->
+                <a href="">개인정보처리방침</a>
+                <!-- 이용약관 -->
+                <a href="">이용약관</a>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

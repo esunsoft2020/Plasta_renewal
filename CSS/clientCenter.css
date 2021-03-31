@@ -1,0 +1,103 @@
+/* #F9F5F4 버튼 위
+#E2A488 버튼 */
+
+/* *{border: 1px dotted red; margin: 0; padding: 0;} */
+
+@media (max-width: 600px){
+
+    .faq{
+        background-color: #F9F5F4 ;text-align: center;
+        margin-top: 8vw;
+        padding: 5vw 0;
+    }
+    .faq div{display: flex; justify-content: center;}
+    .faq div a{background-color: #E2A488; width: 8vw; padding: 5px;}
+    .faq input{width: 80vw;}
+    .ask{background-color: #F9F5F4 ;}
+    hr{padding: 0; margin: 0;}
+
+    .ask{
+        padding: 5vw 0;
+        display: flex; justify-content: center; align-items: center;}
+    .ask p{font-size: 5px;}
+    .ask a{background-color: black; color: white; margin-left: 3vw; padding: 10px 5vw;}
+
+    .list{display: inline-block; margin-top: 20px; width: 100%;}
+    .list div.q{width: 120px; border: 1px solid black; padding: 5px 8px; text-align: center;}
+    .list div.q a{font-size: 10px;}
+    .list div.iii{display: flex; justify-content: center; padding: 50px 0;}
+
+}
+  @media (min-width: 600px){
+    .faq{
+        background-color: #F9F5F4 ;text-align: center;
+        margin-top: 8vw;
+        padding: 5vw 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .faq h4{margin: 0 10px;}
+    .faq div{display: flex; justify-content: center;}
+    .faq div a{background-color: #E2A488; width: 8vw; padding: 5px;}
+    .faq input{width: 50vw;}
+    .ask{background-color: #F9F5F4 ;}
+    hr{padding: 0; margin: 0;}
+
+    .ask{
+        padding: 5vw 0;
+        display: flex; justify-content: center; align-items: center;}
+    .ask p{font-size: 15px;}
+    .ask a{background-color: black; color: white; margin-left: 3vw; padding: 10px 10vw;}
+
+    .list{display: inline-block; margin-top: 30px; width: 100%;}
+    .list div.q{width: 200px; border: 1px solid black; padding: 5px 0; text-align: center;}
+    .list div.q a{font-size: 14px; padding: 10px 20px; color: black;}
+    .list div.iii{display: flex; justify-content: center; padding: 80px 0;}
+
+
+}
+  @media (min-width: 800px){
+    article{
+        margin-top: 100px;
+        display: flex; background-color:#F9F5F4 ;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq{
+        background-color: #F9F5F4 ;text-align: center;
+        margin-top: 0vw;
+        padding: 5vw 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .faq h4{margin: 0 10px;}
+    .faq div{display: flex; justify-content: center;}
+    .faq div a{background-color: #E2A488; width: 60px; padding: 5px; height: 60px;}
+    .faq input{width: 40vw; height: 60px;}
+    .ask{background-color: #F9F5F4 ;}
+
+    .ask{margin-left: 40px;
+        padding: 5vw 0;
+        display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+    .ask p{font-size: 20px;}
+    .ask a{background-color: black; color: white; margin: 1vw 0 0 0 ; padding: 10px 100px;}
+
+    .list{display: inline-block; margin-top: 30px; width: 100%;}
+    .list div.q{
+        margin-left: 40%;
+        width: 250px; border: 1px solid black; border-bottom: 0px dotted black;padding: 15px 0;
+    }
+    .list div.q a{font-size: 20px; padding: 10px 20px; color: black;}
+    .list div.iii{
+        border: 0.5px solid black;
+        display: flex; justify-content: center; padding: 100px 0;
+    }
+    .list div.iii p{
+        font-size: 20px;
+    }
+
+}
