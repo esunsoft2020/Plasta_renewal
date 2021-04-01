@@ -19,10 +19,12 @@ function checkAll(selectAll)  {
   }
 function success(){
     const checkboxes = document.getElementsByName('chk');
-    alert (test);
+    // alert ('test');
     // if (){
     //     alert('true');
     //     }else{
     //       alert('false');
     //     } 
+
+    open("./Sign_Up2.html");
 }

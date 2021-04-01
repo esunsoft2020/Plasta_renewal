@@ -30,8 +30,8 @@ function clickLayout(e){
 
         if(e==document.getElementsByClassName("box1")[0]){
             // box1 클릭
-            box1.src = "./image/eun/classic/boxBlack.png";
-            box2.src = "./image/eun/classic/menuGray.png"; 
+            box1.src = "./..//Image/eun/classic/boxBlack.png";
+            box2.src = "./../Image/eun/classic/menuGray.png"; 
        
             let items = document.getElementsByClassName("wrap");
             for(let i=0 ; i<items.length ; i++){
@@ -40,8 +40,8 @@ function clickLayout(e){
             
         }else{
             // box2 클릭
-            box1.src = "./image/eun/classic/boxGray.png";
-            box2.src = "./image/eun/classic/menuBlack.png"; 
+            box1.src = "./../Image/eun/classic/boxGray.png";
+            box2.src = "./../Image/eun/classic/menuBlack.png"; 
 
             let items = document.getElementsByClassName("wrap");
             for(let i=0 ; i<items.length ; i++){
