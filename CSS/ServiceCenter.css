@@ -1,0 +1,32 @@
+container{
+  background: beige;
+  height: 50vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+}
+
+.itme1{
+  background: darkorchid;
+}
+.itme2{
+  background: darkorchid;
+}
+.itme3{
+  background: darkorchid;
+}
+table {
+  border-width: 2px;
+  background-color: #52E385;
+}
+tr, td {
+  padding: 3px;
+}
+
+/* border-bottom-style example classes */
+.b3 {border-bottom-style: dotted;}
