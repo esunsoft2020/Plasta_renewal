@@ -7,12 +7,12 @@ function show(){
     let img2;
     switch(num){
         case 1:
-            img1 = "./image/eun/top/top1_1.png";
-            img2 = "./image/eun/top/top1_2.png";
+            img1 = "./Image/eun/top/top1_1.png";
+            img2 = "./Image/eun/top/top1_2.png";
             break;
         case 2:
-            img1 = "./image/eun/top/top2_1.png";
-            img2 = "./image/eun/top/top2_2.png";
+            img1 = "./Image/eun/top/top2_1.png";
+            img2 = "./Image/eun/top/top2_2.png";
             break;
     }
     num++;
